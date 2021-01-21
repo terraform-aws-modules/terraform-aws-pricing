@@ -1,0 +1,22 @@
+[
+  {
+    "Type": "TERM_MATCH",
+    "Field": "ServiceCode",
+    "Value": "AmazonEC2"
+  },
+  {
+    "Type": "TERM_MATCH",
+    "Field": "location",
+    "Value": "EU (Ireland)"
+  },
+  {
+    "Type": "TERM_MATCH",
+    "Field": "volumeApiName",
+    "Value": "io2"
+  },
+  {
+    "Type": "TERM_MATCH",
+    "Field": "volumeType",
+    "Value": "Provisioned IOPS"
+  }
+]
