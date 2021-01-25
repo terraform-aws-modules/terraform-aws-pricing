@@ -1,7 +1,7 @@
 locals {
   debug_output         = lookup(local.local_dev, "debug_output", var.debug_output)
   call_aws_pricing_api = lookup(local.local_dev, "call_aws_pricing_api", var.call_aws_pricing_api)
-  run_aws_cli_commands = lookup(local.local_dev, "run_aws_cli_commands", false)
+  #  run_aws_cli_commands = lookup(local.local_dev, "run_aws_cli_commands", false)
 
   content = lookup(local.local_dev, "content", var.content)
 }

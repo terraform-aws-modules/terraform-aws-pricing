@@ -1,13 +1,13 @@
 locals {
   local_dev = {
-#    debug_output         = true
-#    call_aws_pricing_api = true
-#    run_aws_cli_commands = false
+    #    debug_output         = true
+    #    call_aws_pricing_api = true
+    #    run_aws_cli_commands = false
 
     # Regex to select subset of keys to work with:
-#    process_keys_regex = "aws_db_instance"
+    #    process_keys_regex = "aws_db_instance"
 
-#    content = jsondecode(data.local_file.local_plan.content)
+    #    content = jsondecode(data.local_file.local_plan.content)
   }
 }
 #

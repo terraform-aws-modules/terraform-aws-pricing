@@ -38,7 +38,8 @@ No input.
 
 | Name | Description |
 |------|-------------|
-| price\_tfstate | Costs for local file |
+| price\_plan | Costs for local file - plan |
+| price\_tfstate | Costs for local file - state |
 | price\_tfstate\_with\_terraform\_remote\_state | Costs for remote state |
 
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->

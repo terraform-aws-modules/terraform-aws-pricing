@@ -20,14 +20,12 @@ Run `terraform destroy` when you don't need these resources.
 | terraform | >= 0.13 |
 | aws | >= 3 |
 | local | >= 1 |
-| null | >= 3 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
 | local | >= 1 |
-| null | >= 3 |
 
 ## Inputs
 
@@ -37,9 +35,7 @@ No input.
 
 | Name | Description |
 |------|-------------|
-| aws\_cli\_commands | n/a |
-| extracted\_filters\_in\_instances\_multiple | n/a |
-| instances\_map\_fixed\_keys | n/a |
+| aws\_cli\_commands | List of AWS CLI commands with Pricing filters |
 | pricing\_input\_resources | Map of input resource filters (from plan/state or static) |
 | pricing\_pricing\_per\_resources | Map of resource pricing |
 | pricing\_pricing\_product\_filters | Map of pricing product filters (as they are submitted using data source `aws_pricing_product`) |

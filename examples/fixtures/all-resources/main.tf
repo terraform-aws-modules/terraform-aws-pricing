@@ -314,45 +314,45 @@ resource "aws_db_instance" "d4" {
 # databaseEngine = "SQL Server"
 # databaseEdition = "Express"
 resource "aws_db_instance" "d5" {
-  engine               = "sqlserver-ex"
-  instance_class       = "db.t3.medium"
-  allocated_storage    = 30
-  storage_type         = "gp2"
+  engine            = "sqlserver-ex"
+  instance_class    = "db.t3.medium"
+  allocated_storage = 30
+  storage_type      = "gp2"
 }
 
 # databaseEngine = "SQL Server"
 # databaseEdition = "Enterprise"
 resource "aws_db_instance" "d6" {
-  engine               = "sqlserver-ee"
-  instance_class       = "db.r5.xlarge"
-  allocated_storage    = 30
-  storage_type         = "gp2"
+  engine            = "sqlserver-ee"
+  instance_class    = "db.r5.xlarge"
+  allocated_storage = 30
+  storage_type      = "gp2"
 }
 
 # databaseEngine = "SQL Server"
 # databaseEdition = "Standard"
 resource "aws_db_instance" "d7" {
-  engine               = "sqlserver-se"
-  instance_class       = "db.r5.xlarge"
-  allocated_storage    = 30
-  storage_type         = "gp2"
+  engine            = "sqlserver-se"
+  instance_class    = "db.r5.xlarge"
+  allocated_storage = 30
+  storage_type      = "gp2"
 }
 
 # databaseEngine = "SQL Server"
 # databaseEdition = "Web"
 resource "aws_db_instance" "d8" {
-  engine               = "sqlserver-web"
-  instance_class       = "db.r5.xlarge"
-  allocated_storage    = 30
-  storage_type         = "gp2"
+  engine            = "sqlserver-web"
+  instance_class    = "db.r5.xlarge"
+  allocated_storage = 30
+  storage_type      = "gp2"
 }
 
 # databaseEngine = "Oracle"
 resource "aws_db_instance" "d9" {
-  engine               = "oracle-ee"
-  instance_class       = "db.t3.large"
-  allocated_storage    = 40
-  storage_type         = "gp2"
+  engine            = "oracle-ee"
+  instance_class    = "db.t3.large"
+  allocated_storage = 40
+  storage_type      = "gp2"
 }
 
 # databaseEngine = "MariaDB"

@@ -1,7 +1,7 @@
-output "calculation_check" {
-  description = "Costs for both plan and state should match"
-  value       = module.pricing_plan.total_price_per_month == module.pricing_all_together_state.total_price_per_month
-}
+#output "calculation_check" {
+#  description = "Costs for both plan and state should match"
+#  value       = module.pricing_plan.total_price_per_month == module.pricing_all_together_state.total_price_per_month
+#}
 
 #################
 # Terraform plan

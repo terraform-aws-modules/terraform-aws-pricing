@@ -12,7 +12,7 @@ module "pricing_state" {
 module "pricing_plan" {
   source = "../../modules/pricing"
 
-  debug_output = true
+  #  debug_output = true
   #  call_aws_pricing_api = false
 
   content = jsondecode(data.local_file.local_plan.content)
@@ -32,17 +32,18 @@ module "pricing_plan" {
 ####################
 # Calculation check
 # ec2-all-together.tfstate and ec2-all-together-plan.json should produce the same cost estimation
+# Disabled because I have not created plan and state for both set of "all-resources"
 ####################
 
-data "local_file" "all_together_state" {
-  filename = "../fixtures/ec2-all-together.tfstate"
-}
-
-module "pricing_all_together_state" {
-  source = "../../modules/pricing"
-
-  content = jsondecode(data.local_file.all_together_state.content)
-}
+#data "local_file" "all_together_state" {
+#  filename = "../fixtures/ec2.terraform.tfstate"
+#}
+#
+#module "pricing_all_together_state" {
+#  source = "../../modules/pricing"
+#
+#  content = jsondecode(data.local_file.all_together_state.content)
+#}
 
 ##################
 # Terraform state
@@ -51,7 +52,7 @@ data "terraform_remote_state" "local_state" {
   backend = "local"
 
   config = {
-    path = "../fixtures/ec2.terraform.tfstate"
+    path = "../fixtures/etc/ec2.terraform.tfstate"
   }
 }
 
@@ -59,5 +60,5 @@ data "terraform_remote_state" "local_state" {
 # Terraform plan (as JSON)
 ###########################
 data "local_file" "local_plan" {
-  filename = "../fixtures/ec2-all-together-plan.json"
+  filename = "../fixtures/all-resources/plan.json"
 }

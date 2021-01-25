@@ -1,5 +1,6 @@
 output "aws_cli_commands" {
-  value = module.pricing.aws_cli_commands
+  description = "List of AWS CLI commands with Pricing filters"
+  value       = module.pricing.aws_cli_commands
 }
 
 #######

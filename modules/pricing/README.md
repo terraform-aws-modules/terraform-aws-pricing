@@ -42,8 +42,6 @@ add support for new types of resources.
 | Name | Version |
 |------|---------|
 | aws | >= 3 |
-| local | n/a |
-| null | n/a |
 
 ## Inputs
 

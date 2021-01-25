@@ -40,7 +40,6 @@ No input.
 
 | Name | Description |
 |------|-------------|
-| calculation\_check | Costs for both plan and state should match |
 | pricing\_plan\_input\_resources | Map of input resource filters (from plan/state or static) |
 | pricing\_plan\_pricing\_per\_resources | Map of resource pricing |
 | pricing\_plan\_pricing\_product\_filters | Map of pricing product filters (as they are submitted using data source `aws_pricing_product`) |
