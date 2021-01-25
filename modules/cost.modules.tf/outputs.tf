@@ -1,5 +1,5 @@
 locals {
-  costs = var.enabled ? jsondecode(file(data.null_data_source.costs[0].outputs["cost_filename"])) : {}
+  costs = var.enabled ? jsondecode(file(data.null_data_source.costs[0].outputs["cost_filename"])) : tomap({})
 }
 
 output "costs" {

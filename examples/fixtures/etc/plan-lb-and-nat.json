@@ -1,0 +1,611 @@
+{
+  "format_version": "0.1",
+  "terraform_version": "0.12.24",
+  "planned_values": {
+    "root_module": {
+      "resources": [
+        {
+          "address": "aws_alb.alb2",
+          "mode": "managed",
+          "type": "aws_alb",
+          "name": "alb2",
+          "provider_name": "aws",
+          "schema_version": 0,
+          "values": {
+            "access_logs": [],
+            "drop_invalid_header_fields": false,
+            "enable_cross_zone_load_balancing": null,
+            "enable_deletion_protection": false,
+            "enable_http2": true,
+            "idle_timeout": 60,
+            "load_balancer_type": "application",
+            "name_prefix": null,
+            "tags": null,
+            "timeouts": null
+          }
+        },
+        {
+          "address": "aws_eip.nat",
+          "mode": "managed",
+          "type": "aws_eip",
+          "name": "nat",
+          "provider_name": "aws",
+          "schema_version": 0,
+          "values": {
+            "associate_with_private_ip": null,
+            "tags": null,
+            "timeouts": null,
+            "vpc": true
+          }
+        },
+        {
+          "address": "aws_elb.elb",
+          "mode": "managed",
+          "type": "aws_elb",
+          "name": "elb",
+          "provider_name": "aws",
+          "schema_version": 0,
+          "values": {
+            "access_logs": [],
+            "connection_draining": false,
+            "connection_draining_timeout": 300,
+            "cross_zone_load_balancing": true,
+            "idle_timeout": 60,
+            "listener": [
+              {
+                "instance_port": 80,
+                "instance_protocol": "HTTP",
+                "lb_port": 80,
+                "lb_protocol": "HTTP",
+                "ssl_certificate_id": ""
+              }
+            ],
+            "name_prefix": null,
+            "tags": null
+          }
+        },
+        {
+          "address": "aws_lb.alb",
+          "mode": "managed",
+          "type": "aws_lb",
+          "name": "alb",
+          "provider_name": "aws",
+          "schema_version": 0,
+          "values": {
+            "access_logs": [],
+            "drop_invalid_header_fields": false,
+            "enable_cross_zone_load_balancing": null,
+            "enable_deletion_protection": false,
+            "enable_http2": true,
+            "idle_timeout": 60,
+            "load_balancer_type": "application",
+            "name_prefix": null,
+            "tags": null,
+            "timeouts": null
+          }
+        },
+        {
+          "address": "aws_lb.nlb",
+          "mode": "managed",
+          "type": "aws_lb",
+          "name": "nlb",
+          "provider_name": "aws",
+          "schema_version": 0,
+          "values": {
+            "access_logs": [],
+            "drop_invalid_header_fields": null,
+            "enable_cross_zone_load_balancing": false,
+            "enable_deletion_protection": false,
+            "enable_http2": null,
+            "idle_timeout": null,
+            "load_balancer_type": "network",
+            "name_prefix": null,
+            "tags": null,
+            "timeouts": null
+          }
+        },
+        {
+          "address": "aws_lb.undefined_type",
+          "mode": "managed",
+          "type": "aws_lb",
+          "name": "undefined_type",
+          "provider_name": "aws",
+          "schema_version": 0,
+          "values": {
+            "access_logs": [],
+            "drop_invalid_header_fields": false,
+            "enable_cross_zone_load_balancing": null,
+            "enable_deletion_protection": false,
+            "enable_http2": true,
+            "idle_timeout": 60,
+            "load_balancer_type": "application",
+            "name_prefix": null,
+            "tags": null,
+            "timeouts": null
+          }
+        },
+        {
+          "address": "aws_nat_gateway.nat",
+          "mode": "managed",
+          "type": "aws_nat_gateway",
+          "name": "nat",
+          "provider_name": "aws",
+          "schema_version": 0,
+          "values": {
+            "subnet_id": "subnet-816551c9",
+            "tags": null
+          }
+        }
+      ]
+    }
+  },
+  "resource_changes": [
+    {
+      "address": "aws_alb.alb2",
+      "mode": "managed",
+      "type": "aws_alb",
+      "name": "alb2",
+      "provider_name": "aws",
+      "change": {
+        "actions": [
+          "create"
+        ],
+        "before": null,
+        "after": {
+          "access_logs": [],
+          "drop_invalid_header_fields": false,
+          "enable_cross_zone_load_balancing": null,
+          "enable_deletion_protection": false,
+          "enable_http2": true,
+          "idle_timeout": 60,
+          "load_balancer_type": "application",
+          "name_prefix": null,
+          "tags": null,
+          "timeouts": null
+        },
+        "after_unknown": {
+          "access_logs": [],
+          "arn": true,
+          "arn_suffix": true,
+          "dns_name": true,
+          "id": true,
+          "internal": true,
+          "ip_address_type": true,
+          "name": true,
+          "security_groups": true,
+          "subnet_mapping": true,
+          "subnets": true,
+          "vpc_id": true,
+          "zone_id": true
+        }
+      }
+    },
+    {
+      "address": "aws_eip.nat",
+      "mode": "managed",
+      "type": "aws_eip",
+      "name": "nat",
+      "provider_name": "aws",
+      "change": {
+        "actions": [
+          "create"
+        ],
+        "before": null,
+        "after": {
+          "associate_with_private_ip": null,
+          "tags": null,
+          "timeouts": null,
+          "vpc": true
+        },
+        "after_unknown": {
+          "allocation_id": true,
+          "association_id": true,
+          "domain": true,
+          "id": true,
+          "instance": true,
+          "network_interface": true,
+          "private_dns": true,
+          "private_ip": true,
+          "public_dns": true,
+          "public_ip": true,
+          "public_ipv4_pool": true
+        }
+      }
+    },
+    {
+      "address": "aws_elb.elb",
+      "mode": "managed",
+      "type": "aws_elb",
+      "name": "elb",
+      "provider_name": "aws",
+      "change": {
+        "actions": [
+          "create"
+        ],
+        "before": null,
+        "after": {
+          "access_logs": [],
+          "connection_draining": false,
+          "connection_draining_timeout": 300,
+          "cross_zone_load_balancing": true,
+          "idle_timeout": 60,
+          "listener": [
+            {
+              "instance_port": 80,
+              "instance_protocol": "HTTP",
+              "lb_port": 80,
+              "lb_protocol": "HTTP",
+              "ssl_certificate_id": ""
+            }
+          ],
+          "name_prefix": null,
+          "tags": null
+        },
+        "after_unknown": {
+          "access_logs": [],
+          "arn": true,
+          "availability_zones": true,
+          "dns_name": true,
+          "health_check": true,
+          "id": true,
+          "instances": true,
+          "internal": true,
+          "listener": [
+            {}
+          ],
+          "name": true,
+          "security_groups": true,
+          "source_security_group": true,
+          "source_security_group_id": true,
+          "subnets": true,
+          "zone_id": true
+        }
+      }
+    },
+    {
+      "address": "aws_lb.alb",
+      "mode": "managed",
+      "type": "aws_lb",
+      "name": "alb",
+      "provider_name": "aws",
+      "change": {
+        "actions": [
+          "create"
+        ],
+        "before": null,
+        "after": {
+          "access_logs": [],
+          "drop_invalid_header_fields": false,
+          "enable_cross_zone_load_balancing": null,
+          "enable_deletion_protection": false,
+          "enable_http2": true,
+          "idle_timeout": 60,
+          "load_balancer_type": "application",
+          "name_prefix": null,
+          "tags": null,
+          "timeouts": null
+        },
+        "after_unknown": {
+          "access_logs": [],
+          "arn": true,
+          "arn_suffix": true,
+          "dns_name": true,
+          "id": true,
+          "internal": true,
+          "ip_address_type": true,
+          "name": true,
+          "security_groups": true,
+          "subnet_mapping": true,
+          "subnets": true,
+          "vpc_id": true,
+          "zone_id": true
+        }
+      }
+    },
+    {
+      "address": "aws_lb.nlb",
+      "mode": "managed",
+      "type": "aws_lb",
+      "name": "nlb",
+      "provider_name": "aws",
+      "change": {
+        "actions": [
+          "create"
+        ],
+        "before": null,
+        "after": {
+          "access_logs": [],
+          "drop_invalid_header_fields": null,
+          "enable_cross_zone_load_balancing": false,
+          "enable_deletion_protection": false,
+          "enable_http2": null,
+          "idle_timeout": null,
+          "load_balancer_type": "network",
+          "name_prefix": null,
+          "tags": null,
+          "timeouts": null
+        },
+        "after_unknown": {
+          "access_logs": [],
+          "arn": true,
+          "arn_suffix": true,
+          "dns_name": true,
+          "id": true,
+          "internal": true,
+          "ip_address_type": true,
+          "name": true,
+          "security_groups": true,
+          "subnet_mapping": true,
+          "subnets": true,
+          "vpc_id": true,
+          "zone_id": true
+        }
+      }
+    },
+    {
+      "address": "aws_lb.undefined_type",
+      "mode": "managed",
+      "type": "aws_lb",
+      "name": "undefined_type",
+      "provider_name": "aws",
+      "change": {
+        "actions": [
+          "create"
+        ],
+        "before": null,
+        "after": {
+          "access_logs": [],
+          "drop_invalid_header_fields": false,
+          "enable_cross_zone_load_balancing": null,
+          "enable_deletion_protection": false,
+          "enable_http2": true,
+          "idle_timeout": 60,
+          "load_balancer_type": "application",
+          "name_prefix": null,
+          "tags": null,
+          "timeouts": null
+        },
+        "after_unknown": {
+          "access_logs": [],
+          "arn": true,
+          "arn_suffix": true,
+          "dns_name": true,
+          "id": true,
+          "internal": true,
+          "ip_address_type": true,
+          "name": true,
+          "security_groups": true,
+          "subnet_mapping": true,
+          "subnets": true,
+          "vpc_id": true,
+          "zone_id": true
+        }
+      }
+    },
+    {
+      "address": "aws_nat_gateway.nat",
+      "mode": "managed",
+      "type": "aws_nat_gateway",
+      "name": "nat",
+      "provider_name": "aws",
+      "change": {
+        "actions": [
+          "create"
+        ],
+        "before": null,
+        "after": {
+          "subnet_id": "subnet-816551c9",
+          "tags": null
+        },
+        "after_unknown": {
+          "allocation_id": true,
+          "id": true,
+          "network_interface_id": true,
+          "private_ip": true,
+          "public_ip": true
+        }
+      }
+    }
+  ],
+  "prior_state": {
+    "format_version": "0.1",
+    "terraform_version": "0.12.24",
+    "values": {
+      "root_module": {
+        "resources": [
+          {
+            "address": "data.aws_subnet_ids.all",
+            "mode": "data",
+            "type": "aws_subnet_ids",
+            "name": "all",
+            "provider_name": "aws",
+            "schema_version": 0,
+            "values": {
+              "filter": null,
+              "id": "vpc-4b42aa32",
+              "ids": [
+                "subnet-816551c9",
+                "subnet-8f2442d5",
+                "subnet-e3f0d585"
+              ],
+              "tags": null,
+              "vpc_id": "vpc-4b42aa32"
+            }
+          },
+          {
+            "address": "data.aws_vpc.default",
+            "mode": "data",
+            "type": "aws_vpc",
+            "name": "default",
+            "provider_name": "aws",
+            "schema_version": 0,
+            "values": {
+              "arn": "arn:aws:ec2:eu-west-1:052235879155:vpc/vpc-4b42aa32",
+              "cidr_block": "172.31.0.0/16",
+              "cidr_block_associations": [
+                {
+                  "association_id": "vpc-cidr-assoc-d7fdedbc",
+                  "cidr_block": "172.31.0.0/16",
+                  "state": "associated"
+                }
+              ],
+              "default": true,
+              "dhcp_options_id": "dopt-f80e549e",
+              "enable_dns_hostnames": true,
+              "enable_dns_support": true,
+              "filter": null,
+              "id": "vpc-4b42aa32",
+              "instance_tenancy": "default",
+              "ipv6_association_id": null,
+              "ipv6_cidr_block": null,
+              "main_route_table_id": "rtb-a73c2ede",
+              "owner_id": "052235879155",
+              "state": "available",
+              "tags": {}
+            }
+          }
+        ]
+      }
+    }
+  },
+  "configuration": {
+    "root_module": {
+      "resources": [
+        {
+          "address": "aws_alb.alb2",
+          "mode": "managed",
+          "type": "aws_alb",
+          "name": "alb2",
+          "provider_config_key": "aws",
+          "expressions": {
+            "load_balancer_type": {
+              "constant_value": "application"
+            }
+          },
+          "schema_version": 0
+        },
+        {
+          "address": "aws_eip.nat",
+          "mode": "managed",
+          "type": "aws_eip",
+          "name": "nat",
+          "provider_config_key": "aws",
+          "expressions": {
+            "vpc": {
+              "constant_value": true
+            }
+          },
+          "schema_version": 0
+        },
+        {
+          "address": "aws_elb.elb",
+          "mode": "managed",
+          "type": "aws_elb",
+          "name": "elb",
+          "provider_config_key": "aws",
+          "expressions": {
+            "listener": [
+              {
+                "instance_port": {
+                  "constant_value": 80
+                },
+                "instance_protocol": {
+                  "constant_value": "HTTP"
+                },
+                "lb_port": {
+                  "constant_value": 80
+                },
+                "lb_protocol": {
+                  "constant_value": "HTTP"
+                }
+              }
+            ]
+          },
+          "schema_version": 0
+        },
+        {
+          "address": "aws_lb.alb",
+          "mode": "managed",
+          "type": "aws_lb",
+          "name": "alb",
+          "provider_config_key": "aws",
+          "expressions": {
+            "load_balancer_type": {
+              "constant_value": "application"
+            }
+          },
+          "schema_version": 0
+        },
+        {
+          "address": "aws_lb.nlb",
+          "mode": "managed",
+          "type": "aws_lb",
+          "name": "nlb",
+          "provider_config_key": "aws",
+          "expressions": {
+            "load_balancer_type": {
+              "constant_value": "network"
+            }
+          },
+          "schema_version": 0
+        },
+        {
+          "address": "aws_lb.undefined_type",
+          "mode": "managed",
+          "type": "aws_lb",
+          "name": "undefined_type",
+          "provider_config_key": "aws",
+          "schema_version": 0
+        },
+        {
+          "address": "aws_nat_gateway.nat",
+          "mode": "managed",
+          "type": "aws_nat_gateway",
+          "name": "nat",
+          "provider_config_key": "aws",
+          "expressions": {
+            "allocation_id": {
+              "references": [
+                "aws_eip.nat"
+              ]
+            },
+            "subnet_id": {
+              "references": [
+                "data.aws_subnet_ids.all"
+              ]
+            }
+          },
+          "schema_version": 0
+        },
+        {
+          "address": "data.aws_subnet_ids.all",
+          "mode": "data",
+          "type": "aws_subnet_ids",
+          "name": "all",
+          "provider_config_key": "aws",
+          "expressions": {
+            "vpc_id": {
+              "references": [
+                "data.aws_vpc.default"
+              ]
+            }
+          },
+          "schema_version": 0
+        },
+        {
+          "address": "data.aws_vpc.default",
+          "mode": "data",
+          "type": "aws_vpc",
+          "name": "default",
+          "provider_config_key": "aws",
+          "expressions": {
+            "default": {
+              "constant_value": true
+            }
+          },
+          "schema_version": 0
+        }
+      ]
+    }
+  }
+}

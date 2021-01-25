@@ -1,0 +1,435 @@
+{
+  "format_version": "0.1",
+  "terraform_version": "0.12.24",
+  "planned_values": {
+    "root_module": {
+      "resources": [
+        {
+          "address": "aws_instance.this_1",
+          "mode": "managed",
+          "type": "aws_instance",
+          "name": "this_1",
+          "provider_name": "aws",
+          "schema_version": 1,
+          "values": {
+            "ami": "ami-06ce3edf0cff21f07",
+            "credit_specification": [],
+            "disable_api_termination": null,
+            "ebs_block_device": [
+              {
+                "delete_on_termination": true,
+                "device_name": "xvfa",
+                "volume_size": 20,
+                "volume_type": "sc1"
+              },
+              {
+                "delete_on_termination": true,
+                "device_name": "xvfb",
+                "iops": 2000,
+                "volume_size": 30,
+                "volume_type": "io1"
+              },
+              {
+                "delete_on_termination": true,
+                "device_name": "xvfs",
+                "volume_size": 10
+              }
+            ],
+            "ebs_optimized": null,
+            "get_password_data": false,
+            "hibernation": null,
+            "iam_instance_profile": null,
+            "instance_initiated_shutdown_behavior": null,
+            "instance_type": "t3.nano",
+            "monitoring": null,
+            "root_block_device": [
+              {
+                "delete_on_termination": true,
+                "iops": 220,
+                "volume_type": "io1"
+              }
+            ],
+            "source_dest_check": true,
+            "tags": null,
+            "timeouts": null,
+            "user_data": null,
+            "user_data_base64": null
+          }
+        }
+      ]
+    }
+  },
+  "resource_changes": [
+    {
+      "address": "aws_ebs_snapshot.standard",
+      "mode": "managed",
+      "type": "aws_ebs_snapshot",
+      "name": "standard",
+      "provider_name": "aws",
+      "change": {
+        "actions": [
+          "create"
+        ],
+        "before": null,
+        "after": {
+          "description": null,
+          "tags": null,
+          "timeouts": null
+        },
+        "after_unknown": {
+          "data_encryption_key_id": true,
+          "encrypted": true,
+          "id": true,
+          "kms_key_id": true,
+          "owner_alias": true,
+          "owner_id": true,
+          "volume_id": true,
+          "volume_size": true
+        }
+      }
+    },
+    {
+      "address": "aws_ebs_snapshot_copy.copied",
+      "mode": "managed",
+      "type": "aws_ebs_snapshot_copy",
+      "name": "copied",
+      "provider_name": "aws",
+      "change": {
+        "actions": [
+          "create"
+        ],
+        "before": null,
+        "after": {
+          "description": null,
+          "encrypted": null,
+          "kms_key_id": null,
+          "source_region": "eu-west-1",
+          "tags": null
+        },
+        "after_unknown": {
+          "data_encryption_key_id": true,
+          "id": true,
+          "owner_alias": true,
+          "owner_id": true,
+          "source_snapshot_id": true,
+          "volume_id": true,
+          "volume_size": true
+        }
+      }
+    },
+    {
+      "address": "aws_ebs_volume.volume_io1",
+      "mode": "managed",
+      "type": "aws_ebs_volume",
+      "name": "volume_io1",
+      "provider_name": "aws",
+      "change": {
+        "actions": [
+          "create"
+        ],
+        "before": null,
+        "after": {
+          "availability_zone": "eu-west-1a",
+          "outpost_arn": null,
+          "size": 8,
+          "tags": null,
+          "type": "io1"
+        },
+        "after_unknown": {
+          "arn": true,
+          "encrypted": true,
+          "id": true,
+          "iops": true,
+          "kms_key_id": true,
+          "snapshot_id": true
+        }
+      }
+    },
+    {
+      "address": "aws_ebs_volume.volume_standard",
+      "mode": "managed",
+      "type": "aws_ebs_volume",
+      "name": "volume_standard",
+      "provider_name": "aws",
+      "change": {
+        "actions": [
+          "create"
+        ],
+        "before": null,
+        "after": {
+          "availability_zone": "eu-west-1a",
+          "outpost_arn": null,
+          "size": 7,
+          "tags": null,
+          "type": "standard"
+        },
+        "after_unknown": {
+          "arn": true,
+          "encrypted": true,
+          "id": true,
+          "iops": true,
+          "kms_key_id": true,
+          "snapshot_id": true
+        }
+      }
+    },
+    {
+      "address": "aws_instance.this_1",
+      "mode": "managed",
+      "type": "aws_instance",
+      "name": "this_1",
+      "provider_name": "aws",
+      "change": {
+        "actions": [
+          "create"
+        ],
+        "before": null,
+        "after": {
+          "ami": "ami-06ce3edf0cff21f07",
+          "credit_specification": [],
+          "disable_api_termination": null,
+          "ebs_block_device": [
+            {
+              "delete_on_termination": true,
+              "device_name": "xvfa",
+              "volume_size": 20,
+              "volume_type": "sc1"
+            },
+            {
+              "delete_on_termination": true,
+              "device_name": "xvfb",
+              "iops": 2000,
+              "volume_size": 30,
+              "volume_type": "io1"
+            },
+            {
+              "delete_on_termination": true,
+              "device_name": "xvfs",
+              "volume_size": 10
+            }
+          ],
+          "ebs_optimized": null,
+          "get_password_data": false,
+          "hibernation": null,
+          "iam_instance_profile": null,
+          "instance_initiated_shutdown_behavior": null,
+          "instance_type": "t3.nano",
+          "monitoring": null,
+          "root_block_device": [
+            {
+              "delete_on_termination": true,
+              "iops": 220,
+              "volume_type": "io1"
+            }
+          ],
+          "source_dest_check": true,
+          "tags": null,
+          "timeouts": null,
+          "user_data": null,
+          "user_data_base64": null
+        },
+        "after_unknown": {
+          "arn": true,
+          "associate_public_ip_address": true,
+          "availability_zone": true,
+          "cpu_core_count": true,
+          "cpu_threads_per_core": true,
+          "credit_specification": [],
+          "ebs_block_device": [
+            {
+              "encrypted": true,
+              "iops": true,
+              "kms_key_id": true,
+              "snapshot_id": true,
+              "volume_id": true
+            },
+            {
+              "encrypted": true,
+              "kms_key_id": true,
+              "snapshot_id": true,
+              "volume_id": true
+            },
+            {
+              "encrypted": true,
+              "iops": true,
+              "kms_key_id": true,
+              "snapshot_id": true,
+              "volume_id": true,
+              "volume_type": true
+            }
+          ],
+          "ephemeral_block_device": true,
+          "host_id": true,
+          "id": true,
+          "instance_state": true,
+          "ipv6_address_count": true,
+          "ipv6_addresses": true,
+          "key_name": true,
+          "metadata_options": true,
+          "network_interface": true,
+          "network_interface_id": true,
+          "outpost_arn": true,
+          "password_data": true,
+          "placement_group": true,
+          "primary_network_interface_id": true,
+          "private_dns": true,
+          "private_ip": true,
+          "public_dns": true,
+          "public_ip": true,
+          "root_block_device": [
+            {
+              "device_name": true,
+              "encrypted": true,
+              "kms_key_id": true,
+              "volume_id": true,
+              "volume_size": true
+            }
+          ],
+          "security_groups": true,
+          "subnet_id": true,
+          "tenancy": true,
+          "volume_tags": true,
+          "vpc_security_group_ids": true
+        }
+      }
+    }
+  ],
+  "configuration": {
+    "root_module": {
+      "resources": [
+        {
+          "address": "aws_ebs_snapshot.standard",
+          "mode": "managed",
+          "type": "aws_ebs_snapshot",
+          "name": "standard",
+          "provider_config_key": "aws",
+          "expressions": {
+            "volume_id": {
+              "references": [
+                "aws_ebs_volume.volume_standard"
+              ]
+            }
+          },
+          "schema_version": 0
+        },
+        {
+          "address": "aws_ebs_snapshot_copy.copied",
+          "mode": "managed",
+          "type": "aws_ebs_snapshot_copy",
+          "name": "copied",
+          "provider_config_key": "aws",
+          "expressions": {
+            "source_region": {
+              "constant_value": "eu-west-1"
+            },
+            "source_snapshot_id": {
+              "references": [
+                "aws_ebs_snapshot.standard"
+              ]
+            }
+          },
+          "schema_version": 0
+        },
+        {
+          "address": "aws_ebs_volume.volume_io1",
+          "mode": "managed",
+          "type": "aws_ebs_volume",
+          "name": "volume_io1",
+          "provider_config_key": "aws",
+          "expressions": {
+            "availability_zone": {
+              "constant_value": "eu-west-1a"
+            },
+            "size": {
+              "constant_value": 8
+            },
+            "type": {
+              "constant_value": "io1"
+            }
+          },
+          "schema_version": 0
+        },
+        {
+          "address": "aws_ebs_volume.volume_standard",
+          "mode": "managed",
+          "type": "aws_ebs_volume",
+          "name": "volume_standard",
+          "provider_config_key": "aws",
+          "expressions": {
+            "availability_zone": {
+              "constant_value": "eu-west-1a"
+            },
+            "size": {
+              "constant_value": 7
+            },
+            "type": {
+              "constant_value": "standard"
+            }
+          },
+          "schema_version": 0
+        },
+        {
+          "address": "aws_instance.this_1",
+          "mode": "managed",
+          "type": "aws_instance",
+          "name": "this_1",
+          "provider_config_key": "aws",
+          "expressions": {
+            "ami": {
+              "constant_value": "ami-06ce3edf0cff21f07"
+            },
+            "ebs_block_device": [
+              {
+                "device_name": {
+                  "constant_value": "xvfs"
+                },
+                "volume_size": {
+                  "constant_value": 10
+                }
+              },
+              {
+                "device_name": {
+                  "constant_value": "xvfa"
+                },
+                "volume_size": {
+                  "constant_value": 20
+                },
+                "volume_type": {
+                  "constant_value": "sc1"
+                }
+              },
+              {
+                "device_name": {
+                  "constant_value": "xvfb"
+                },
+                "iops": {
+                  "constant_value": 2000
+                },
+                "volume_size": {
+                  "constant_value": 30
+                },
+                "volume_type": {
+                  "constant_value": "io1"
+                }
+              }
+            ],
+            "instance_type": {
+              "constant_value": "t3.nano"
+            },
+            "root_block_device": [
+              {
+                "iops": {
+                  "constant_value": 220
+                },
+                "volume_type": {
+                  "constant_value": "io1"
+                }
+              }
+            ]
+          },
+          "schema_version": 1
+        }
+      ]
+    }
+  }
+}

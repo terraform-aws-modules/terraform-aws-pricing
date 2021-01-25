@@ -34,7 +34,7 @@ add support for new types of resources.
 
 | Name | Version |
 |------|---------|
-| terraform | >= 0.12.6 |
+| terraform | >= 0.13 |
 | aws | >= 3 |
 
 ## Providers
@@ -42,22 +42,28 @@ add support for new types of resources.
 | Name | Version |
 |------|---------|
 | aws | >= 3 |
+| local | n/a |
+| null | n/a |
 
 ## Inputs
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
+| aws\_default\_ebs\_volume\_size | Default size of EBS volume to use for resources (if not set) when asking AWS Pricing API | `number` | `100` | no |
+| aws\_default\_ebs\_volume\_type | Default type of EBS volume to use for resources (if not set) when asking AWS Pricing API | `string` | `"gp2"` | no |
 | aws\_default\_region | Default AWS region to use for resources (if not set) when asking AWS Pricing API | `string` | `"us-east-1"` | no |
 | call\_aws\_pricing\_api | Whether to call AWS Pricing API for real or just output filter (it is useful to disable this to see filters instead of calling API) | `bool` | `true` | no |
 | content | JSON object containing data of Terraform plan or state | `any` | `{}` | no |
 | debug\_output | Whether to populate more output (useful for debug, but increase verbosity and size of tfstate) | `bool` | `false` | no |
+| hourly\_price\_precision | Number of digits after comma in hourly price | `number` | `10` | no |
+| monthly\_price\_precision | Number of digits after comma in monthly price | `number` | `2` | no |
 | resources | Map of all resources to calculate price for | `any` | `{}` | no |
 
 ## Outputs
 
 | Name | Description |
 |------|-------------|
-| aws\_region\_descriptions | Map of supported AWS regions after conversion for pricing API |
+| aws\_cli\_commands | AWS CLI commands identical to AWS Pricing API calls. This should always return value (preferably one value). Adjust filters accordingly. |
 | input\_resources | Map of input resource filters (from plan/state or static) |
 | pricing\_per\_resources | Map of resource pricing |
 | pricing\_product\_filters | Map of pricing product filters (as they are submitted using data source `aws_pricing_product`) |

@@ -1,0 +1,268 @@
+{
+  "format_version": "0.1",
+  "terraform_version": "0.14.4",
+  "planned_values": {
+    "root_module": {
+      "resources": [
+        {
+          "address": "aws_ebs_volume.v1",
+          "mode": "managed",
+          "type": "aws_ebs_volume",
+          "name": "v1",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 0,
+          "values": {
+            "availability_zone": "eu-central-1a",
+            "multi_attach_enabled": null,
+            "outpost_arn": null,
+            "size": 10,
+            "tags": null
+          }
+        },
+        {
+          "address": "aws_ebs_volume.v2",
+          "mode": "managed",
+          "type": "aws_ebs_volume",
+          "name": "v2",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 0,
+          "values": {
+            "availability_zone": "eu-west-2b",
+            "multi_attach_enabled": null,
+            "outpost_arn": null,
+            "tags": null
+          }
+        },
+        {
+          "address": "aws_ebs_volume.v3",
+          "mode": "managed",
+          "type": "aws_ebs_volume",
+          "name": "v3",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 0,
+          "values": {
+            "availability_zone": "eu-south-1a",
+            "multi_attach_enabled": null,
+            "outpost_arn": null,
+            "tags": null,
+            "type": "sc1"
+          }
+        },
+        {
+          "address": "aws_ebs_volume.v4",
+          "mode": "managed",
+          "type": "aws_ebs_volume",
+          "name": "v4",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 0,
+          "values": {
+            "availability_zone": "eu-west-1a",
+            "iops": 370,
+            "multi_attach_enabled": null,
+            "outpost_arn": null,
+            "tags": null,
+            "type": "io2"
+          }
+        }
+      ]
+    }
+  },
+  "resource_changes": [
+    {
+      "address": "aws_ebs_volume.v1",
+      "mode": "managed",
+      "type": "aws_ebs_volume",
+      "name": "v1",
+      "provider_name": "registry.terraform.io/hashicorp/aws",
+      "change": {
+        "actions": [
+          "create"
+        ],
+        "before": null,
+        "after": {
+          "availability_zone": "eu-west-1a",
+          "multi_attach_enabled": null,
+          "outpost_arn": null,
+          "size": 10,
+          "tags": null
+        },
+        "after_unknown": {
+          "arn": true,
+          "encrypted": true,
+          "id": true,
+          "iops": true,
+          "kms_key_id": true,
+          "snapshot_id": true,
+          "type": true
+        }
+      }
+    },
+    {
+      "address": "aws_ebs_volume.v2",
+      "mode": "managed",
+      "type": "aws_ebs_volume",
+      "name": "v2",
+      "provider_name": "registry.terraform.io/hashicorp/aws",
+      "change": {
+        "actions": [
+          "create"
+        ],
+        "before": null,
+        "after": {
+          "availability_zone": "eu-west-1a",
+          "multi_attach_enabled": null,
+          "outpost_arn": null,
+          "tags": null
+        },
+        "after_unknown": {
+          "arn": true,
+          "encrypted": true,
+          "id": true,
+          "iops": true,
+          "kms_key_id": true,
+          "size": true,
+          "snapshot_id": true,
+          "type": true
+        }
+      }
+    },
+    {
+      "address": "aws_ebs_volume.v3",
+      "mode": "managed",
+      "type": "aws_ebs_volume",
+      "name": "v3",
+      "provider_name": "registry.terraform.io/hashicorp/aws",
+      "change": {
+        "actions": [
+          "create"
+        ],
+        "before": null,
+        "after": {
+          "availability_zone": "eu-west-1a",
+          "multi_attach_enabled": null,
+          "outpost_arn": null,
+          "tags": null,
+          "type": "sc1"
+        },
+        "after_unknown": {
+          "arn": true,
+          "encrypted": true,
+          "id": true,
+          "iops": true,
+          "kms_key_id": true,
+          "size": true,
+          "snapshot_id": true
+        }
+      }
+    },
+    {
+      "address": "aws_ebs_volume.v4",
+      "mode": "managed",
+      "type": "aws_ebs_volume",
+      "name": "v4",
+      "provider_name": "registry.terraform.io/hashicorp/aws",
+      "change": {
+        "actions": [
+          "create"
+        ],
+        "before": null,
+        "after": {
+          "availability_zone": "eu-west-1a",
+          "iops": 100,
+          "multi_attach_enabled": null,
+          "outpost_arn": null,
+          "tags": null,
+          "type": "io2"
+        },
+        "after_unknown": {
+          "arn": true,
+          "encrypted": true,
+          "id": true,
+          "kms_key_id": true,
+          "size": true,
+          "snapshot_id": true
+        }
+      }
+    }
+  ],
+  "configuration": {
+    "provider_config": {
+      "aws": {
+        "name": "aws",
+        "expressions": {
+          "region": {
+            "constant_value": "eu-west-1"
+          }
+        }
+      }
+    },
+    "root_module": {
+      "resources": [
+        {
+          "address": "aws_ebs_volume.v1",
+          "mode": "managed",
+          "type": "aws_ebs_volume",
+          "name": "v1",
+          "provider_config_key": "aws",
+          "expressions": {
+            "availability_zone": {
+              "constant_value": "eu-west-1a"
+            },
+            "size": {
+              "constant_value": 10
+            }
+          },
+          "schema_version": 0
+        },
+        {
+          "address": "aws_ebs_volume.v2",
+          "mode": "managed",
+          "type": "aws_ebs_volume",
+          "name": "v2",
+          "provider_config_key": "aws",
+          "expressions": {
+            "availability_zone": {
+              "constant_value": "eu-west-1a"
+            }
+          },
+          "schema_version": 0
+        },
+        {
+          "address": "aws_ebs_volume.v3",
+          "mode": "managed",
+          "type": "aws_ebs_volume",
+          "name": "v3",
+          "provider_config_key": "aws",
+          "expressions": {
+            "availability_zone": {
+              "constant_value": "eu-west-1a"
+            },
+            "type": {
+              "constant_value": "sc1"
+            }
+          },
+          "schema_version": 0
+        },
+        {
+          "address": "aws_ebs_volume.v4",
+          "mode": "managed",
+          "type": "aws_ebs_volume",
+          "name": "v4",
+          "provider_config_key": "aws",
+          "expressions": {
+            "availability_zone": {
+              "constant_value": "eu-west-1a"
+            },
+            "iops": {
+              "constant_value": 100
+            },
+            "type": {
+              "constant_value": "io2"
+            }
+          },
+          "schema_version": 0
+        }
+      ]
+    }
+  }
+}

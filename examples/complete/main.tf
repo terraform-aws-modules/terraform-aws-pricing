@@ -1,7 +1,3 @@
-#terraform {
-#  backend "inmem" {}
-#}
-
 provider "aws" {
   region = "us-east-1"
 }
@@ -10,8 +6,6 @@ module "pricing" {
   source = "../../modules/pricing"
 
   debug_output = true
-
-  #  call_aws_pricing_api = false
 
   aws_default_region = "eu-west-1"
 
@@ -33,5 +27,5 @@ module "pricing" {
 # Terraform plan (as JSON)
 ###########################
 data "local_file" "local_plan" {
-  filename = "../fixtures/ec2-all-together-plan.json"
+  filename = "../fixtures/etc/ec2.terraform.tfstate"
 }

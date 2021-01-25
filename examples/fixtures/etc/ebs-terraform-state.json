@@ -1,0 +1,117 @@
+{
+  "version": 4,
+  "terraform_version": "0.12.24",
+  "serial": 6,
+  "lineage": "13540a77-ced5-199b-9c94-227a8af363ac",
+  "outputs": {},
+  "resources": [
+    {
+      "mode": "managed",
+      "type": "aws_ebs_snapshot",
+      "name": "standard",
+      "provider": "provider.aws",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "data_encryption_key_id": "",
+            "description": "",
+            "encrypted": false,
+            "id": "snap-004617595d68d690d",
+            "kms_key_id": "",
+            "owner_alias": "",
+            "owner_id": "052235879155",
+            "tags": {},
+            "timeouts": null,
+            "volume_id": "vol-08c7383eaa3f690f5",
+            "volume_size": 7
+          },
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjo2MDAwMDAwMDAwMDAsImRlbGV0ZSI6NjAwMDAwMDAwMDAwfX0=",
+          "dependencies": [
+            "aws_ebs_volume.volume_standard"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "aws_ebs_snapshot_copy",
+      "name": "copied",
+      "provider": "provider.aws",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "data_encryption_key_id": "",
+            "description": "",
+            "encrypted": false,
+            "id": "snap-0526e7ccbf359032c",
+            "kms_key_id": "",
+            "owner_alias": "",
+            "owner_id": "052235879155",
+            "source_region": "eu-west-1",
+            "source_snapshot_id": "snap-004617595d68d690d",
+            "tags": {},
+            "volume_id": "vol-ffffffff",
+            "volume_size": 7
+          },
+          "private": "bnVsbA==",
+          "dependencies": [
+            "aws_ebs_snapshot.standard",
+            "aws_ebs_volume.volume_standard"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "aws_ebs_volume",
+      "name": "volume_io1",
+      "provider": "provider.aws",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "arn": "arn:aws:ec2:eu-west-1:052235879155:volume/vol-02a74d481bdd8635c",
+            "availability_zone": "eu-west-1a",
+            "encrypted": false,
+            "id": "vol-02a74d481bdd8635c",
+            "iops": 300,
+            "kms_key_id": "",
+            "outpost_arn": "",
+            "size": 8,
+            "snapshot_id": "",
+            "tags": null,
+            "type": "io1"
+          },
+          "private": "bnVsbA=="
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "aws_ebs_volume",
+      "name": "volume_standard",
+      "provider": "provider.aws",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "arn": "arn:aws:ec2:eu-west-1:052235879155:volume/vol-08c7383eaa3f690f5",
+            "availability_zone": "eu-west-1a",
+            "encrypted": false,
+            "id": "vol-08c7383eaa3f690f5",
+            "iops": 0,
+            "kms_key_id": "",
+            "outpost_arn": "",
+            "size": 7,
+            "snapshot_id": "",
+            "tags": {},
+            "type": "standard"
+          },
+          "private": "bnVsbA=="
+        }
+      ]
+    }
+  ]
+}
