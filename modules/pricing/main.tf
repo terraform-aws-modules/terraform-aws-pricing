@@ -8,7 +8,7 @@ locals {
   resources_combined = {
     for k, v in local.input_resources :
     k => (
-      merge(local.resource_defaults[split(".", k)[0]], v)
+      merge(lookup(local.resource_defaults, split(".", k)[0], {}), v)
     )
   }
 
@@ -30,11 +30,18 @@ locals {
     )
   }
 
-  # Quantity of individual resources
+  # There are 2 types of quantities supported:
+  # 1. Implicit (eg. count of similar resources) - "aws_instance.this#5" means 5 instances
+  # 2. Explicit (eg, EBS volume size has pricing as GB/Month so converting to Gb/Hour):
+  # { "aws_ebs_volume.v1.aws_ebs_volume.v1[0]" = {"_quantity" = "10", "_divisor" = 730, "volumeApiName" = "io2"} }
   resource_quantity = {
     for k, v in local.resources :
     k => (
-      tonumber(try(split("#", k)[1], 1))
+      tonumber(
+        try(split("#", k)[1], 1) * try(
+          format("%.10f", local.resources[k]["_quantity"] / lookup(local.resources[k], "_divisor", 1)
+        ), 1)
+      )
     )
   }
 
@@ -43,14 +50,18 @@ locals {
     for k, v in local.resources :
     k => {
       service_code : local.resources_service_code[split(".", k)[0]]
-      filters : v
+      filters : {
+        for f_k, f_v in v :
+        f_k => f_v
+        if !contains(["_quantity", "_divisor"], f_k)
+      }
     }
   }
 }
 
+# @todo: Change a key to be composite of all keys, so that during reapply everything resets
 data "aws_pricing_product" "this" {
-  # @todo: Change a key to be composite of all keys, so that during reapply everything resets
-  for_each = var.call_aws_pricing_api ? local.pricing_product_filters : {}
+  for_each = local.call_aws_pricing_api ? local.pricing_product_filters : {}
 
   service_code = each.value.service_code
 

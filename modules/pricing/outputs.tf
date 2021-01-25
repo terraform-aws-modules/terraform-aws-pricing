@@ -9,17 +9,17 @@ locals {
 
 output "resources" {
   description = "Map of provided resources with filters"
-  value       = var.debug_output ? local.resources : {}
+  value       = local.debug_output ? local.resources : {}
 }
 
 output "input_resources" {
   description = "Map of input resource filters (from plan/state or static)"
-  value       = var.debug_output ? local.input_resources : {}
+  value       = local.debug_output ? local.input_resources : {}
 }
 
 output "pricing_product_filters" {
   description = "Map of pricing product filters (as they are submitted using data source `aws_pricing_product`)"
-  value       = var.debug_output ? local.pricing_product_filters : {}
+  value       = local.debug_output ? local.pricing_product_filters : {}
 }
 
 output "resource_quantity" {
@@ -27,10 +27,10 @@ output "resource_quantity" {
   value       = local.resource_quantity
 }
 
-output "aws_region_descriptions" {
-  description = "Map of supported AWS regions after conversion for pricing API"
-  value       = var.debug_output ? local.all_aws_regions : {}
-}
+#output "aws_region_descriptions" {
+#  description = "Map of supported AWS regions after conversion for pricing API"
+#  value       = local.debug_output ? local.all_aws_regions : {}
+#}
 
 output "pricing_per_resources" {
   description = "Map of resource pricing"
@@ -39,10 +39,18 @@ output "pricing_per_resources" {
 
 output "total_price_per_hour" {
   description = "Total price for all resources per hour"
-  value       = tonumber(format("%.2f", local.total_price))
+  value       = tonumber(format(format("%%.%df", var.hourly_price_precision), local.total_price))
 }
 
 output "total_price_per_month" {
   description = "Total price for all resources per month (730 hours)"
-  value       = tonumber(format("%.2f", local.total_price * 730))
+  value       = tonumber(format(format("%%.%df", var.monthly_price_precision), local.total_price * 730))
+}
+
+########
+# Debug
+########
+output "aws_cli_commands" {
+  description = "AWS CLI commands identical to AWS Pricing API calls. This should always return value (preferably one value). Adjust filters accordingly."
+  value       = local.debug_output ? local.aws_cli_commands : {}
 }

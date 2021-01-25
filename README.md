@@ -20,6 +20,34 @@ This is not an official HashiCorp product.
 - [x] Optionally, using [cost.modules.tf](https://cost.modules.tf/)
 - [x] Can be executed on restricted CI/CD platforms where Terraform can run
 
+
+## Supported resources
+
+1. EC2 instances (on-demand) and Autoscaling Groups (Launch Configurations and Launch Templates):
+- [x] aws_instance
+- [ ] aws_autoscaling_group
+- [ ] aws_launch_configuration
+- [ ] aws_launch_template
+
+2. EC2 Fleets (on-demand)
+- [ ] aws_ec2_fleet
+
+3. EBS Volumes, Snapshots, Snapshot Copies
+- [x] aws_ebs_volume
+- [x] aws_ebs_snapshot
+- [x] aws_ebs_snapshot_copy
+
+4. Elastic Load Balancing (ELB, ALB, NLB)
+- [x] aws_elb
+- [x] aws_alb / aws_lb
+
+5. NAT Gateways
+- [x] aws_nat_gateway
+
+6. Redshift Clusters
+- [x] aws_redshift_cluster
+
+
 ## Usages
 
 ### Using AWS Pricing API: Terraform state or plan as JSON
@@ -134,8 +162,9 @@ When you use this type of backend, there is no way to run `terraform output`.
 
 ### Known issues/limitations
 
+1. Autoscaling groups resources
 1. When changing values price is sometimes higher after the first run because it is calculated based on keys and there can be some previous keys. Solution is to update code to include some unique key/prefix. Or just disable terraform state (no state = no past).
-2. At some point later, maybe add support for other providers like [Azure](http://davecallan.com/azure-price-api-examples/) and [Google Cloud](https://stackoverflow.com/questions/59048071/how-to-get-gcp-pricing-list-from-catalogue-api)
+1. At some point later, maybe add support for other providers like [Azure](http://davecallan.com/azure-price-api-examples/) and [Google Cloud](https://stackoverflow.com/questions/59048071/how-to-get-gcp-pricing-list-from-catalogue-api)
 
 
 ## Examples

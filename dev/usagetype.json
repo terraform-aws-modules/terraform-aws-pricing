@@ -1,0 +1,2168 @@
+{
+    "AttributeValues": [        {
+            "Value": "AFS1-CPUCredits:t3"
+        },
+        {
+            "Value": "AFS1-EBS:FastSnapshotRestore"
+        },
+        {
+            "Value": "AFS1-EBS:SnapshotUsage"
+        },
+        {
+            "Value": "AFS1-EBS:VolumeIOUsage"
+        },
+        {
+            "Value": "AFS1-EBS:VolumeP-IOPS.gp3"
+        },
+        {
+            "Value": "AFS1-EBS:VolumeP-IOPS.piops"
+        },
+        {
+            "Value": "AFS1-EBS:VolumeP-Throughput.gp3"
+        },
+        {
+            "Value": "AFS1-EBS:VolumeUsage.gp2"
+        },
+        {
+            "Value": "AFS1-EBS:VolumeUsage.gp3"
+        },
+        {
+            "Value": "AFS1-EBS:VolumeUsage.piops"
+        },
+        {
+            "Value": "AFS1-EBS:VolumeUsage.sc1"
+        },
+        {
+            "Value": "AFS1-EBS:VolumeUsage.st1"
+        },
+        {
+            "Value": "AFS1-EBS:VolumeUsage"
+        },
+        {
+            "Value": "AFS1-EBS:directAPI.snapshot.Get"
+        },
+        {
+            "Value": "AFS1-EBS:directAPI.snapshot.List"
+        },
+        {
+            "Value": "AFS1-EBS:directAPI.snapshot.Put"
+        },
+        {
+            "Value": "AFS1-LCUUsage"
+        },
+        {
+            "Value": "AFS1-LoadBalancerUsage"
+        },        {
+            "Value": "AFS1-NatGateway-Hours"
+        },        {
+            "Value": "APE1-CPUCredits:t3"
+        },        {
+            "Value": "APE1-EBS:FastSnapshotRestore"
+        },
+        {
+            "Value": "APE1-EBS:SnapshotUsage"
+        },
+        {
+            "Value": "APE1-EBS:VolumeIOUsage"
+        },
+        {
+            "Value": "APE1-EBS:VolumeP-IOPS.gp3"
+        },
+        {
+            "Value": "APE1-EBS:VolumeP-IOPS.io2.tier2"
+        },
+        {
+            "Value": "APE1-EBS:VolumeP-IOPS.io2.tier3"
+        },
+        {
+            "Value": "APE1-EBS:VolumeP-IOPS.io2"
+        },
+        {
+            "Value": "APE1-EBS:VolumeP-IOPS.piops"
+        },
+        {
+            "Value": "APE1-EBS:VolumeP-Throughput.gp3"
+        },
+        {
+            "Value": "APE1-EBS:VolumeUsage.gp2"
+        },
+        {
+            "Value": "APE1-EBS:VolumeUsage.gp3"
+        },
+        {
+            "Value": "APE1-EBS:VolumeUsage.io2"
+        },
+        {
+            "Value": "APE1-EBS:VolumeUsage.piops"
+        },
+        {
+            "Value": "APE1-EBS:VolumeUsage.sc1"
+        },
+        {
+            "Value": "APE1-EBS:VolumeUsage.st1"
+        },
+        {
+            "Value": "APE1-EBS:VolumeUsage"
+        },
+        {
+            "Value": "APE1-EBS:directAPI.snapshot.Get"
+        },
+        {
+            "Value": "APE1-EBS:directAPI.snapshot.List"
+        },
+        {
+            "Value": "APE1-EBS:directAPI.snapshot.Put"
+        },
+        {
+            "Value": "APE1-ElasticIP:AdditionalAddress"
+        },
+        {
+            "Value": "APE1-ElasticIP:IdleAddress"
+        },
+        {
+            "Value": "APE1-ElasticIP:Remap"
+        },        {
+            "Value": "APE1-LCUUsage"
+        },
+        {
+            "Value": "APE1-LoadBalancerUsage"
+        },        {
+            "Value": "APE1-NatGateway-Hours"
+        },
+        {
+            "Value": "APN1-CPUCredits:t2"
+        },
+        {
+            "Value": "APN1-CPUCredits:t3"
+        },
+        {
+            "Value": "APN1-CPUCredits:t3a"
+        },
+        {
+            "Value": "APN1-CPUCredits:t4g"
+        },
+        {
+            "Value": "APN1-EBS:FastSnapshotRestore"
+        },
+        {
+            "Value": "APN1-EBS:SnapshotUsage"
+        },
+        {
+            "Value": "APN1-EBS:VolumeIOUsage"
+        },
+        {
+            "Value": "APN1-EBS:VolumeP-IOPS.gp3"
+        },
+        {
+            "Value": "APN1-EBS:VolumeP-IOPS.io2.tier2"
+        },
+        {
+            "Value": "APN1-EBS:VolumeP-IOPS.io2.tier3"
+        },
+        {
+            "Value": "APN1-EBS:VolumeP-IOPS.io2"
+        },
+        {
+            "Value": "APN1-EBS:VolumeP-IOPS.piops"
+        },
+        {
+            "Value": "APN1-EBS:VolumeP-Throughput.gp3"
+        },
+        {
+            "Value": "APN1-EBS:VolumeUsage.gp2"
+        },
+        {
+            "Value": "APN1-EBS:VolumeUsage.gp3"
+        },
+        {
+            "Value": "APN1-EBS:VolumeUsage.io2"
+        },
+        {
+            "Value": "APN1-EBS:VolumeUsage.piops"
+        },
+        {
+            "Value": "APN1-EBS:VolumeUsage.sc1"
+        },
+        {
+            "Value": "APN1-EBS:VolumeUsage.st1"
+        },
+        {
+            "Value": "APN1-EBS:VolumeUsage"
+        },
+        {
+            "Value": "APN1-EBS:directAPI.snapshot.Get"
+        },
+        {
+            "Value": "APN1-EBS:directAPI.snapshot.List"
+        },
+        {
+            "Value": "APN1-EBS:directAPI.snapshot.Put"
+        },
+        {
+            "Value": "APN1-EGpuUsage:eg1.2xlarge"
+        },
+        {
+            "Value": "APN1-EGpuUsage:eg1.large"
+        },
+        {
+            "Value": "APN1-EGpuUsage:eg1.medium"
+        },
+        {
+            "Value": "APN1-EGpuUsage:eg1.xlarge"
+        },
+        {
+            "Value": "APN1-ElasticIP:AdditionalAddress"
+        },
+        {
+            "Value": "APN1-ElasticIP:IdleAddress"
+        },
+        {
+            "Value": "APN1-ElasticIP:Remap"
+        },        {
+            "Value": "APN1-LCUUsage"
+        },
+        {
+            "Value": "APN1-LoadBalancerUsage"
+        },        {
+            "Value": "APN1-NatGateway-Hours"
+        },        {
+            "Value": "APN1-NatGateway-Prvd-Gbps"
+        },        {
+            "Value": "APN2-CPUCredits:t2"
+        },
+        {
+            "Value": "APN2-CPUCredits:t3"
+        },
+        {
+            "Value": "APN2-CPUCredits:t3a"
+        },
+        {
+            "Value": "APN2-EBS:FastSnapshotRestore"
+        },
+        {
+            "Value": "APN2-EBS:SnapshotUsage"
+        },
+        {
+            "Value": "APN2-EBS:VolumeIOUsage"
+        },
+        {
+            "Value": "APN2-EBS:VolumeP-IOPS.gp3"
+        },
+        {
+            "Value": "APN2-EBS:VolumeP-IOPS.io2.tier2"
+        },
+        {
+            "Value": "APN2-EBS:VolumeP-IOPS.io2.tier3"
+        },
+        {
+            "Value": "APN2-EBS:VolumeP-IOPS.io2"
+        },
+        {
+            "Value": "APN2-EBS:VolumeP-IOPS.piops"
+        },
+        {
+            "Value": "APN2-EBS:VolumeP-Throughput.gp3"
+        },
+        {
+            "Value": "APN2-EBS:VolumeUsage.gp2"
+        },
+        {
+            "Value": "APN2-EBS:VolumeUsage.gp3"
+        },
+        {
+            "Value": "APN2-EBS:VolumeUsage.io2"
+        },
+        {
+            "Value": "APN2-EBS:VolumeUsage.piops"
+        },
+        {
+            "Value": "APN2-EBS:VolumeUsage.sc1"
+        },
+        {
+            "Value": "APN2-EBS:VolumeUsage.st1"
+        },
+        {
+            "Value": "APN2-EBS:VolumeUsage"
+        },
+        {
+            "Value": "APN2-EBS:directAPI.snapshot.Get"
+        },
+        {
+            "Value": "APN2-EBS:directAPI.snapshot.List"
+        },
+        {
+            "Value": "APN2-EBS:directAPI.snapshot.Put"
+        },        {
+            "Value": "APN2-ElasticIP:AdditionalAddress"
+        },
+        {
+            "Value": "APN2-ElasticIP:IdleAddress"
+        },
+        {
+            "Value": "APN2-ElasticIP:Remap"
+        },
+        {
+            "Value": "APN2-LCUUsage"
+        },
+        {
+            "Value": "APN2-LoadBalancerUsage"
+        },        {
+            "Value": "APN2-NatGateway-Hours"
+        },
+        {
+            "Value": "APN3-EBS:FastSnapshotRestore"
+        },
+        {
+            "Value": "APN3-EBS:SnapshotUsage"
+        },
+        {
+            "Value": "APN3-EBS:VolumeIOUsage"
+        },
+        {
+            "Value": "APN3-EBS:VolumeP-IOPS.gp3"
+        },
+        {
+            "Value": "APN3-EBS:VolumeP-IOPS.piops"
+        },
+        {
+            "Value": "APN3-EBS:VolumeP-Throughput.gp3"
+        },
+        {
+            "Value": "APN3-EBS:VolumeUsage.gp2"
+        },
+        {
+            "Value": "APN3-EBS:VolumeUsage.gp3"
+        },
+        {
+            "Value": "APN3-EBS:VolumeUsage.piops"
+        },
+        {
+            "Value": "APN3-EBS:VolumeUsage.sc1"
+        },
+        {
+            "Value": "APN3-EBS:VolumeUsage.st1"
+        },
+        {
+            "Value": "APN3-EBS:VolumeUsage"
+        },
+        {
+            "Value": "APN3-EBS:directAPI.snapshot.Get"
+        },
+        {
+            "Value": "APN3-EBS:directAPI.snapshot.List"
+        },
+        {
+            "Value": "APN3-EBS:directAPI.snapshot.Put"
+        },        {
+            "Value": "APN3-IdleProvisionedLBCapacity"
+        },
+        {
+            "Value": "APN3-LCUUsage"
+        },
+        {
+            "Value": "APN3-LoadBalancerUsage"
+        },        {
+            "Value": "APN3-NatGateway-Hours"
+        },        {
+            "Value": "APN3-NatGateway-Prvd-Gbps"
+        },        {
+            "Value": "APNE1WL1NRT1-CarrierIP:AdditionalAddress"
+        },
+        {
+            "Value": "APNE1WL1NRT1-CarrierIP:IdleAddress"
+        },
+        {
+            "Value": "APNE1WL1NRT1-CarrierIP:Remap"
+        },
+        {
+            "Value": "APNE1WL1NRT1-EBS:VolumeUsage.gp2"
+        },
+        {
+            "Value": "APNE2WL1CJJ1-CarrierIP:AdditionalAddress"
+        },
+        {
+            "Value": "APNE2WL1CJJ1-CarrierIP:IdleAddress"
+        },
+        {
+            "Value": "APNE2WL1CJJ1-CarrierIP:Remap"
+        },
+        {
+            "Value": "APNE2WL1CJJ1-EBS:VolumeUsage.gp2"
+        },        {
+            "Value": "APS1-CPUCredits:t2"
+        },
+        {
+            "Value": "APS1-CPUCredits:t3"
+        },        {
+            "Value": "APS1-EBS:FastSnapshotRestore"
+        },
+        {
+            "Value": "APS1-EBS:SnapshotUsage"
+        },
+        {
+            "Value": "APS1-EBS:VolumeIOUsage"
+        },
+        {
+            "Value": "APS1-EBS:VolumeP-IOPS.gp3"
+        },
+        {
+            "Value": "APS1-EBS:VolumeP-IOPS.io2.tier2"
+        },
+        {
+            "Value": "APS1-EBS:VolumeP-IOPS.io2.tier3"
+        },
+        {
+            "Value": "APS1-EBS:VolumeP-IOPS.io2"
+        },
+        {
+            "Value": "APS1-EBS:VolumeP-IOPS.piops"
+        },
+        {
+            "Value": "APS1-EBS:VolumeP-Throughput.gp3"
+        },
+        {
+            "Value": "APS1-EBS:VolumeUsage.gp2"
+        },
+        {
+            "Value": "APS1-EBS:VolumeUsage.gp3"
+        },
+        {
+            "Value": "APS1-EBS:VolumeUsage.io2"
+        },
+        {
+            "Value": "APS1-EBS:VolumeUsage.piops"
+        },
+        {
+            "Value": "APS1-EBS:VolumeUsage.sc1"
+        },
+        {
+            "Value": "APS1-EBS:VolumeUsage.st1"
+        },
+        {
+            "Value": "APS1-EBS:VolumeUsage"
+        },
+        {
+            "Value": "APS1-EBS:directAPI.snapshot.Get"
+        },
+        {
+            "Value": "APS1-EBS:directAPI.snapshot.List"
+        },
+        {
+            "Value": "APS1-EBS:directAPI.snapshot.Put"
+        },
+        {
+            "Value": "APS1-EGpuUsage:eg1.2xlarge"
+        },
+        {
+            "Value": "APS1-EGpuUsage:eg1.large"
+        },
+        {
+            "Value": "APS1-EGpuUsage:eg1.medium"
+        },
+        {
+            "Value": "APS1-EGpuUsage:eg1.xlarge"
+        },
+        {
+            "Value": "APS1-ElasticIP:AdditionalAddress"
+        },
+        {
+            "Value": "APS1-ElasticIP:IdleAddress"
+        },
+        {
+            "Value": "APS1-ElasticIP:Remap"
+        },
+        {
+            "Value": "APS1-LCUUsage"
+        },
+        {
+            "Value": "APS1-LoadBalancerUsage"
+        },        {
+            "Value": "APS1-NatGateway-Hours"
+        },        {
+            "Value": "APS2-CPUCredits:t2"
+        },
+        {
+            "Value": "APS2-CPUCredits:t3"
+        },
+        {
+            "Value": "APS2-CPUCredits:t3a"
+        },
+        {
+            "Value": "APS2-EBS:FastSnapshotRestore"
+        },
+        {
+            "Value": "APS2-EBS:SnapshotUsage"
+        },
+        {
+            "Value": "APS2-EBS:VolumeIOUsage"
+        },
+        {
+            "Value": "APS2-EBS:VolumeP-IOPS.gp3"
+        },
+        {
+            "Value": "APS2-EBS:VolumeP-IOPS.io2.tier2"
+        },
+        {
+            "Value": "APS2-EBS:VolumeP-IOPS.io2.tier3"
+        },
+        {
+            "Value": "APS2-EBS:VolumeP-IOPS.io2"
+        },
+        {
+            "Value": "APS2-EBS:VolumeP-IOPS.piops"
+        },
+        {
+            "Value": "APS2-EBS:VolumeP-Throughput.gp3"
+        },
+        {
+            "Value": "APS2-EBS:VolumeUsage.gp2"
+        },
+        {
+            "Value": "APS2-EBS:VolumeUsage.gp3"
+        },
+        {
+            "Value": "APS2-EBS:VolumeUsage.io2"
+        },
+        {
+            "Value": "APS2-EBS:VolumeUsage.piops"
+        },
+        {
+            "Value": "APS2-EBS:VolumeUsage.sc1"
+        },
+        {
+            "Value": "APS2-EBS:VolumeUsage.st1"
+        },
+        {
+            "Value": "APS2-EBS:VolumeUsage"
+        },
+        {
+            "Value": "APS2-EBS:directAPI.snapshot.Get"
+        },
+        {
+            "Value": "APS2-EBS:directAPI.snapshot.List"
+        },
+        {
+            "Value": "APS2-EBS:directAPI.snapshot.Put"
+        },        {
+            "Value": "APS2-EGpuUsage:eg1.2xlarge"
+        },
+        {
+            "Value": "APS2-EGpuUsage:eg1.large"
+        },
+        {
+            "Value": "APS2-EGpuUsage:eg1.medium"
+        },
+        {
+            "Value": "APS2-EGpuUsage:eg1.xlarge"
+        },
+        {
+            "Value": "APS2-ElasticIP:AdditionalAddress"
+        },
+        {
+            "Value": "APS2-ElasticIP:IdleAddress"
+        },
+        {
+            "Value": "APS2-ElasticIP:Remap"
+        },
+        {
+            "Value": "APS2-LCUUsage"
+        },
+        {
+            "Value": "APS2-LoadBalancerUsage"
+        },        {
+            "Value": "APS2-NatGateway-Hours"
+        },        {
+            "Value": "APS3-CPUCredits:t2"
+        },
+        {
+            "Value": "APS3-CPUCredits:t3"
+        },
+        {
+            "Value": "APS3-CPUCredits:t3a"
+        },
+        {
+            "Value": "APS3-CPUCredits:t4g"
+        },        {
+            "Value": "APS3-EBS:FastSnapshotRestore"
+        },
+        {
+            "Value": "APS3-EBS:SnapshotUsage"
+        },
+        {
+            "Value": "APS3-EBS:VolumeIOUsage"
+        },
+        {
+            "Value": "APS3-EBS:VolumeP-IOPS.gp3"
+        },
+        {
+            "Value": "APS3-EBS:VolumeP-IOPS.io2.tier2"
+        },
+        {
+            "Value": "APS3-EBS:VolumeP-IOPS.io2.tier3"
+        },
+        {
+            "Value": "APS3-EBS:VolumeP-IOPS.io2"
+        },
+        {
+            "Value": "APS3-EBS:VolumeP-IOPS.piops"
+        },
+        {
+            "Value": "APS3-EBS:VolumeP-Throughput.gp3"
+        },
+        {
+            "Value": "APS3-EBS:VolumeUsage.gp2"
+        },
+        {
+            "Value": "APS3-EBS:VolumeUsage.gp3"
+        },
+        {
+            "Value": "APS3-EBS:VolumeUsage.io2"
+        },
+        {
+            "Value": "APS3-EBS:VolumeUsage.piops"
+        },
+        {
+            "Value": "APS3-EBS:VolumeUsage.sc1"
+        },
+        {
+            "Value": "APS3-EBS:VolumeUsage.st1"
+        },
+        {
+            "Value": "APS3-EBS:VolumeUsage"
+        },
+        {
+            "Value": "APS3-EBS:directAPI.snapshot.Get"
+        },
+        {
+            "Value": "APS3-EBS:directAPI.snapshot.List"
+        },
+        {
+            "Value": "APS3-EBS:directAPI.snapshot.Put"
+        },
+        {
+            "Value": "APS3-ElasticIP:AdditionalAddress"
+        },
+        {
+            "Value": "APS3-ElasticIP:IdleAddress"
+        },
+        {
+            "Value": "APS3-ElasticIP:Remap"
+        },
+        {
+            "Value": "APS3-LCUUsage"
+        },
+        {
+            "Value": "APS3-LoadBalancerUsage"
+        },        {
+            "Value": "APS3-NatGateway-Hours"
+        },
+        {
+            "Value": "BOS1-CPUCredits:t3"
+        },        {
+            "Value": "BOS1-EBS:VolumeUsage.gp2"
+        },        {
+            "Value": "CAN1-CPUCredits:t2"
+        },
+        {
+            "Value": "CAN1-CPUCredits:t3"
+        },
+        {
+            "Value": "CAN1-CPUCredits:t3a"
+        },
+        {
+            "Value": "CAN1-EBS:FastSnapshotRestore"
+        },
+        {
+            "Value": "CAN1-EBS:SnapshotUsage"
+        },
+        {
+            "Value": "CAN1-EBS:VolumeIOUsage"
+        },
+        {
+            "Value": "CAN1-EBS:VolumeP-IOPS.gp3"
+        },
+        {
+            "Value": "CAN1-EBS:VolumeP-IOPS.io2.tier2"
+        },
+        {
+            "Value": "CAN1-EBS:VolumeP-IOPS.io2.tier3"
+        },
+        {
+            "Value": "CAN1-EBS:VolumeP-IOPS.io2"
+        },
+        {
+            "Value": "CAN1-EBS:VolumeP-IOPS.piops"
+        },
+        {
+            "Value": "CAN1-EBS:VolumeP-Throughput.gp3"
+        },
+        {
+            "Value": "CAN1-EBS:VolumeUsage.gp2"
+        },
+        {
+            "Value": "CAN1-EBS:VolumeUsage.gp3"
+        },
+        {
+            "Value": "CAN1-EBS:VolumeUsage.io2"
+        },
+        {
+            "Value": "CAN1-EBS:VolumeUsage.piops"
+        },
+        {
+            "Value": "CAN1-EBS:VolumeUsage.sc1"
+        },
+        {
+            "Value": "CAN1-EBS:VolumeUsage.st1"
+        },
+        {
+            "Value": "CAN1-EBS:VolumeUsage"
+        },
+        {
+            "Value": "CAN1-EBS:directAPI.snapshot.Get"
+        },
+        {
+            "Value": "CAN1-EBS:directAPI.snapshot.List"
+        },
+        {
+            "Value": "CAN1-EBS:directAPI.snapshot.Put"
+        },        {
+            "Value": "CAN1-ElasticIP:AdditionalAddress"
+        },
+        {
+            "Value": "CAN1-ElasticIP:IdleAddress"
+        },
+        {
+            "Value": "CAN1-ElasticIP:Remap"
+        },
+        {
+            "Value": "CAN1-LCUUsage"
+        },
+        {
+            "Value": "CAN1-LoadBalancerUsage"
+        },        {
+            "Value": "CAN1-NatGateway-Hours"
+        },
+        {
+            "Value": "CPUCredits:t2"
+        },
+        {
+            "Value": "CPUCredits:t3"
+        },
+        {
+            "Value": "CPUCredits:t3a"
+        },
+        {
+            "Value": "CPUCredits:t4g"
+        },
+        {
+            "Value": "EBS:SnapshotUsageUnderBilling"
+        },
+        {
+            "Value": "EBS:SnapshotUsage"
+        },
+        {
+            "Value": "EBS:VolumeIOUsage"
+        },
+        {
+            "Value": "EBS:VolumeP-IOPS.gp3"
+        },
+        {
+            "Value": "EBS:VolumeP-IOPS.io2.tier2"
+        },
+        {
+            "Value": "EBS:VolumeP-IOPS.io2.tier3"
+        },
+        {
+            "Value": "EBS:VolumeP-IOPS.io2"
+        },
+        {
+            "Value": "EBS:VolumeP-IOPS.piops"
+        },
+        {
+            "Value": "EBS:VolumeP-Throughput.gp3"
+        },
+        {
+            "Value": "EBS:VolumeUsage.gp2"
+        },
+        {
+            "Value": "EBS:VolumeUsage.gp3"
+        },
+        {
+            "Value": "EBS:VolumeUsage.io2"
+        },
+        {
+            "Value": "EBS:VolumeUsage.piops"
+        },
+        {
+            "Value": "EBS:VolumeUsage.sc1"
+        },
+        {
+            "Value": "EBS:VolumeUsage.st1"
+        },
+        {
+            "Value": "EBS:VolumeUsage"
+        },
+        {
+            "Value": "EGpuUsage:eg1.2xlarge"
+        },
+        {
+            "Value": "EGpuUsage:eg1.large"
+        },
+        {
+            "Value": "EGpuUsage:eg1.medium"
+        },
+        {
+            "Value": "EGpuUsage:eg1.xlarge"
+        },        {
+            "Value": "EU-CPUCredits:t2"
+        },
+        {
+            "Value": "EU-CPUCredits:t3"
+        },
+        {
+            "Value": "EU-CPUCredits:t4g"
+        },
+        {
+            "Value": "EU-EBS:FastSnapshotRestore"
+        },
+        {
+            "Value": "EU-EBS:SnapshotUsage"
+        },
+        {
+            "Value": "EU-EBS:VolumeIOUsage"
+        },
+        {
+            "Value": "EU-EBS:VolumeP-IOPS.gp3"
+        },
+        {
+            "Value": "EU-EBS:VolumeP-IOPS.io2.tier2"
+        },
+        {
+            "Value": "EU-EBS:VolumeP-IOPS.io2.tier3"
+        },
+        {
+            "Value": "EU-EBS:VolumeP-IOPS.io2"
+        },
+        {
+            "Value": "EU-EBS:VolumeP-IOPS.piops"
+        },
+        {
+            "Value": "EU-EBS:VolumeP-Throughput.gp3"
+        },
+        {
+            "Value": "EU-EBS:VolumeUsage.gp2"
+        },
+        {
+            "Value": "EU-EBS:VolumeUsage.gp3"
+        },
+        {
+            "Value": "EU-EBS:VolumeUsage.io2"
+        },
+        {
+            "Value": "EU-EBS:VolumeUsage.piops"
+        },
+        {
+            "Value": "EU-EBS:VolumeUsage.sc1"
+        },
+        {
+            "Value": "EU-EBS:VolumeUsage.st1"
+        },
+        {
+            "Value": "EU-EBS:VolumeUsage"
+        },
+        {
+            "Value": "EU-EBS:directAPI.snapshot.Get"
+        },
+        {
+            "Value": "EU-EBS:directAPI.snapshot.List"
+        },
+        {
+            "Value": "EU-EBS:directAPI.snapshot.Put"
+        },
+        {
+            "Value": "EU-EGpuUsage:eg1.2xlarge"
+        },
+        {
+            "Value": "EU-EGpuUsage:eg1.large"
+        },
+        {
+            "Value": "EU-EGpuUsage:eg1.medium"
+        },
+        {
+            "Value": "EU-EGpuUsage:eg1.xlarge"
+        },        {
+            "Value": "EU-ElasticIP:AdditionalAddress"
+        },
+        {
+            "Value": "EU-ElasticIP:IdleAddress"
+        },
+        {
+            "Value": "EU-ElasticIP:Remap"
+        },        {
+            "Value": "EU-LCUUsage"
+        },
+        {
+            "Value": "EU-LoadBalancerUsage"
+        },        {
+            "Value": "EU-NatGateway-Hours"
+        },        {
+            "Value": "EU-NatGateway-Prvd-Gbps"
+        },
+        {
+            "Value": "EUC1-CPUCredits:t2"
+        },
+        {
+            "Value": "EUC1-CPUCredits:t3"
+        },
+        {
+            "Value": "EUC1-CPUCredits:t3a"
+        },
+        {
+            "Value": "EUC1-CPUCredits:t4g"
+        },
+        {
+            "Value": "EUC1-EBS:FastSnapshotRestore"
+        },
+        {
+            "Value": "EUC1-EBS:SnapshotUsage"
+        },
+        {
+            "Value": "EUC1-EBS:VolumeIOUsage"
+        },
+        {
+            "Value": "EUC1-EBS:VolumeP-IOPS.gp3"
+        },
+        {
+            "Value": "EUC1-EBS:VolumeP-IOPS.io2.tier2"
+        },
+        {
+            "Value": "EUC1-EBS:VolumeP-IOPS.io2.tier3"
+        },
+        {
+            "Value": "EUC1-EBS:VolumeP-IOPS.io2"
+        },
+        {
+            "Value": "EUC1-EBS:VolumeP-IOPS.piops"
+        },
+        {
+            "Value": "EUC1-EBS:VolumeP-Throughput.gp3"
+        },
+        {
+            "Value": "EUC1-EBS:VolumeUsage.gp2"
+        },
+        {
+            "Value": "EUC1-EBS:VolumeUsage.gp3"
+        },
+        {
+            "Value": "EUC1-EBS:VolumeUsage.io2"
+        },
+        {
+            "Value": "EUC1-EBS:VolumeUsage.piops"
+        },
+        {
+            "Value": "EUC1-EBS:VolumeUsage.sc1"
+        },
+        {
+            "Value": "EUC1-EBS:VolumeUsage.st1"
+        },
+        {
+            "Value": "EUC1-EBS:VolumeUsage"
+        },
+        {
+            "Value": "EUC1-EBS:directAPI.snapshot.Get"
+        },
+        {
+            "Value": "EUC1-EBS:directAPI.snapshot.List"
+        },
+        {
+            "Value": "EUC1-EBS:directAPI.snapshot.Put"
+        },        {
+            "Value": "EUC1-EGpuUsage:eg1.2xlarge"
+        },
+        {
+            "Value": "EUC1-EGpuUsage:eg1.large"
+        },
+        {
+            "Value": "EUC1-EGpuUsage:eg1.medium"
+        },
+        {
+            "Value": "EUC1-EGpuUsage:eg1.xlarge"
+        },
+        {
+            "Value": "EUC1-ElasticIP:AdditionalAddress"
+        },
+        {
+            "Value": "EUC1-ElasticIP:IdleAddress"
+        },
+        {
+            "Value": "EUC1-ElasticIP:Remap"
+        },        {
+            "Value": "EUC1-LCUUsage"
+        },
+        {
+            "Value": "EUC1-LoadBalancerUsage"
+        },        {
+            "Value": "EUC1-NatGateway-Hours"
+        },        {
+            "Value": "EUN1-CPUCredits:t3"
+        },
+        {
+            "Value": "EUN1-EBS:FastSnapshotRestore"
+        },
+        {
+            "Value": "EUN1-EBS:SnapshotUsage"
+        },
+        {
+            "Value": "EUN1-EBS:VolumeIOUsage"
+        },
+        {
+            "Value": "EUN1-EBS:VolumeP-IOPS.gp3"
+        },
+        {
+            "Value": "EUN1-EBS:VolumeP-IOPS.io2.tier2"
+        },
+        {
+            "Value": "EUN1-EBS:VolumeP-IOPS.io2.tier3"
+        },
+        {
+            "Value": "EUN1-EBS:VolumeP-IOPS.io2"
+        },
+        {
+            "Value": "EUN1-EBS:VolumeP-IOPS.piops"
+        },
+        {
+            "Value": "EUN1-EBS:VolumeP-Throughput.gp3"
+        },
+        {
+            "Value": "EUN1-EBS:VolumeUsage.gp2"
+        },
+        {
+            "Value": "EUN1-EBS:VolumeUsage.gp3"
+        },
+        {
+            "Value": "EUN1-EBS:VolumeUsage.io2"
+        },
+        {
+            "Value": "EUN1-EBS:VolumeUsage.piops"
+        },
+        {
+            "Value": "EUN1-EBS:VolumeUsage.sc1"
+        },
+        {
+            "Value": "EUN1-EBS:VolumeUsage.st1"
+        },
+        {
+            "Value": "EUN1-EBS:VolumeUsage"
+        },
+        {
+            "Value": "EUN1-EBS:directAPI.snapshot.Get"
+        },
+        {
+            "Value": "EUN1-EBS:directAPI.snapshot.List"
+        },
+        {
+            "Value": "EUN1-EBS:directAPI.snapshot.Put"
+        },
+        {
+            "Value": "EUN1-ElasticIP:AdditionalAddress"
+        },
+        {
+            "Value": "EUN1-ElasticIP:IdleAddress"
+        },
+        {
+            "Value": "EUN1-ElasticIP:Remap"
+        },        {
+            "Value": "EUN1-LCUUsage"
+        },
+        {
+            "Value": "EUN1-LoadBalancerUsage"
+        },        {
+            "Value": "EUN1-NatGateway-Hours"
+        },        {
+            "Value": "EUN1-NatGateway-Prvd-Gbps"
+        },        {
+            "Value": "EUS1-CPUCredits:t3"
+        },
+        {
+            "Value": "EUS1-EBS:FastSnapshotRestore"
+        },
+        {
+            "Value": "EUS1-EBS:SnapshotUsage"
+        },
+        {
+            "Value": "EUS1-EBS:VolumeIOUsage"
+        },
+        {
+            "Value": "EUS1-EBS:VolumeP-IOPS.gp3"
+        },
+        {
+            "Value": "EUS1-EBS:VolumeP-IOPS.piops"
+        },
+        {
+            "Value": "EUS1-EBS:VolumeP-Throughput.gp3"
+        },
+        {
+            "Value": "EUS1-EBS:VolumeUsage.gp2"
+        },
+        {
+            "Value": "EUS1-EBS:VolumeUsage.gp3"
+        },
+        {
+            "Value": "EUS1-EBS:VolumeUsage.piops"
+        },
+        {
+            "Value": "EUS1-EBS:VolumeUsage.sc1"
+        },
+        {
+            "Value": "EUS1-EBS:VolumeUsage.st1"
+        },
+        {
+            "Value": "EUS1-EBS:VolumeUsage"
+        },
+        {
+            "Value": "EUS1-EBS:directAPI.snapshot.Get"
+        },
+        {
+            "Value": "EUS1-EBS:directAPI.snapshot.List"
+        },
+        {
+            "Value": "EUS1-EBS:directAPI.snapshot.Put"
+        },
+        {
+            "Value": "EUS1-LCUUsage"
+        },
+        {
+            "Value": "EUS1-LoadBalancerUsage"
+        },        {
+            "Value": "EUS1-NatGateway-Hours"
+        },        {
+            "Value": "EUW2-CPUCredits:t2"
+        },
+        {
+            "Value": "EUW2-CPUCredits:t3"
+        },
+        {
+            "Value": "EUW2-CPUCredits:t3a"
+        },
+        {
+            "Value": "EUW2-EBS:FastSnapshotRestore"
+        },
+        {
+            "Value": "EUW2-EBS:SnapshotUsage"
+        },
+        {
+            "Value": "EUW2-EBS:VolumeIOUsage"
+        },
+        {
+            "Value": "EUW2-EBS:VolumeP-IOPS.gp3"
+        },
+        {
+            "Value": "EUW2-EBS:VolumeP-IOPS.io2.tier2"
+        },
+        {
+            "Value": "EUW2-EBS:VolumeP-IOPS.io2.tier3"
+        },
+        {
+            "Value": "EUW2-EBS:VolumeP-IOPS.io2"
+        },
+        {
+            "Value": "EUW2-EBS:VolumeP-IOPS.piops"
+        },
+        {
+            "Value": "EUW2-EBS:VolumeP-Throughput.gp3"
+        },
+        {
+            "Value": "EUW2-EBS:VolumeUsage.gp2"
+        },
+        {
+            "Value": "EUW2-EBS:VolumeUsage.gp3"
+        },
+        {
+            "Value": "EUW2-EBS:VolumeUsage.io2"
+        },
+        {
+            "Value": "EUW2-EBS:VolumeUsage.piops"
+        },
+        {
+            "Value": "EUW2-EBS:VolumeUsage.sc1"
+        },
+        {
+            "Value": "EUW2-EBS:VolumeUsage.st1"
+        },
+        {
+            "Value": "EUW2-EBS:VolumeUsage"
+        },
+        {
+            "Value": "EUW2-EBS:directAPI.snapshot.Get"
+        },
+        {
+            "Value": "EUW2-EBS:directAPI.snapshot.List"
+        },
+        {
+            "Value": "EUW2-EBS:directAPI.snapshot.Put"
+        },        {
+            "Value": "EUW2-ElasticIP:AdditionalAddress"
+        },
+        {
+            "Value": "EUW2-ElasticIP:IdleAddress"
+        },
+        {
+            "Value": "EUW2-ElasticIP:Remap"
+        },        {
+            "Value": "EUW2-LCUUsage"
+        },
+        {
+            "Value": "EUW2-LoadBalancerUsage"
+        },        {
+            "Value": "EUW2-NatGateway-Hours"
+        },        {
+            "Value": "EUW3-EBS:FastSnapshotRestore"
+        },
+        {
+            "Value": "EUW3-EBS:SnapshotUsage"
+        },
+        {
+            "Value": "EUW3-EBS:VolumeIOUsage"
+        },
+        {
+            "Value": "EUW3-EBS:VolumeP-IOPS.gp3"
+        },
+        {
+            "Value": "EUW3-EBS:VolumeP-IOPS.piops"
+        },
+        {
+            "Value": "EUW3-EBS:VolumeP-Throughput.gp3"
+        },
+        {
+            "Value": "EUW3-EBS:VolumeUsage.gp2"
+        },
+        {
+            "Value": "EUW3-EBS:VolumeUsage.gp3"
+        },
+        {
+            "Value": "EUW3-EBS:VolumeUsage.piops"
+        },
+        {
+            "Value": "EUW3-EBS:VolumeUsage.sc1"
+        },
+        {
+            "Value": "EUW3-EBS:VolumeUsage.st1"
+        },
+        {
+            "Value": "EUW3-EBS:VolumeUsage"
+        },
+        {
+            "Value": "EUW3-EBS:directAPI.snapshot.Get"
+        },
+        {
+            "Value": "EUW3-EBS:directAPI.snapshot.List"
+        },
+        {
+            "Value": "EUW3-EBS:directAPI.snapshot.Put"
+        },        {
+            "Value": "EUW3-ElasticIP:AdditionalAddress"
+        },
+        {
+            "Value": "EUW3-ElasticIP:IdleAddress"
+        },
+        {
+            "Value": "EUW3-ElasticIP:Remap"
+        },
+        {
+            "Value": "EUW3-IdleProvisionedLBCapacity"
+        },
+        {
+            "Value": "EUW3-LCUUsage"
+        },
+        {
+            "Value": "EUW3-LoadBalancerUsage"
+        },        {
+            "Value": "EUW3-NatGateway-Hours"
+        },
+        {
+            "Value": "ElasticIP:AdditionalAddress"
+        },
+        {
+            "Value": "ElasticIP:IdleAddress"
+        },
+        {
+            "Value": "ElasticIP:Remap"
+        },
+        {
+            "Value": "HostUsage:a1"
+        },
+        {
+            "Value": "HostUsage:c3"
+        },
+        {
+            "Value": "HostUsage:c4"
+        },
+        {
+            "Value": "HostUsage:c5"
+        },
+        {
+            "Value": "HostUsage:c5d"
+        },
+        {
+            "Value": "HostUsage:c5n"
+        },
+        {
+            "Value": "HostUsage:c6g"
+        },
+        {
+            "Value": "HostUsage:c6gd"
+        },
+        {
+            "Value": "HostUsage:c6gn"
+        },
+        {
+            "Value": "HostUsage:d2"
+        },
+        {
+            "Value": "HostUsage:f1"
+        },
+        {
+            "Value": "HostUsage:g2"
+        },
+        {
+            "Value": "HostUsage:g3"
+        },
+        {
+            "Value": "HostUsage:g4ad"
+        },
+        {
+            "Value": "HostUsage:g4dn"
+        },
+        {
+            "Value": "HostUsage:h1"
+        },
+        {
+            "Value": "HostUsage:i2"
+        },
+        {
+            "Value": "HostUsage:i3"
+        },
+        {
+            "Value": "HostUsage:i3en"
+        },
+        {
+            "Value": "HostUsage:m3"
+        },
+        {
+            "Value": "HostUsage:m4"
+        },
+        {
+            "Value": "HostUsage:m5"
+        },
+        {
+            "Value": "HostUsage:m5d"
+        },
+        {
+            "Value": "HostUsage:m5dn"
+        },
+        {
+            "Value": "HostUsage:m5n"
+        },
+        {
+            "Value": "HostUsage:m5zn"
+        },
+        {
+            "Value": "HostUsage:m6g"
+        },
+        {
+            "Value": "HostUsage:m6gd"
+        },
+        {
+            "Value": "HostUsage:mac1"
+        },
+        {
+            "Value": "HostUsage:p2"
+        },
+        {
+            "Value": "HostUsage:p3"
+        },
+        {
+            "Value": "HostUsage:p3dn"
+        },
+        {
+            "Value": "HostUsage:r3"
+        },
+        {
+            "Value": "HostUsage:r4"
+        },
+        {
+            "Value": "HostUsage:r5"
+        },
+        {
+            "Value": "HostUsage:r5b"
+        },
+        {
+            "Value": "HostUsage:r5d"
+        },
+        {
+            "Value": "HostUsage:r5dn"
+        },
+        {
+            "Value": "HostUsage:r5n"
+        },
+        {
+            "Value": "HostUsage:r6g"
+        },
+        {
+            "Value": "HostUsage:r6gd"
+        },
+        {
+            "Value": "HostUsage:u-12tb1"
+        },
+        {
+            "Value": "HostUsage:u-18tb1"
+        },
+        {
+            "Value": "HostUsage:u-24tb1"
+        },
+        {
+            "Value": "HostUsage:u-6tb1"
+        },
+        {
+            "Value": "HostUsage:u-9tb1"
+        },
+        {
+            "Value": "HostUsage:x1"
+        },
+        {
+            "Value": "HostUsage:x1e"
+        },
+        {
+            "Value": "HostUsage:z1d"
+        },
+        {
+            "Value": "IAH1-CPUCredits:t3"
+        },        {
+            "Value": "IAH1-EBS:VolumeUsage.gp2"
+        },
+        {
+            "Value": "LAX1-CPUCredits:t3"
+        },        {
+            "Value": "LAX1-EBS:FastSnapshotRestore"
+        },
+        {
+            "Value": "LAX1-EBS:SnapshotUsage"
+        },
+        {
+            "Value": "LAX1-EBS:VolumeP-IOPS.piops"
+        },
+        {
+            "Value": "LAX1-EBS:VolumeUsage.gp2"
+        },
+        {
+            "Value": "LAX1-EBS:VolumeUsage.piops"
+        },        {
+            "Value": "LCUUsage"
+        },
+        {
+            "Value": "LoadBalancerUsage"
+        },
+        {
+            "Value": "MES1-CPUCredits:t3"
+        },
+        {
+            "Value": "MES1-EBS:FastSnapshotRestore"
+        },
+        {
+            "Value": "MES1-EBS:SnapshotUsage"
+        },
+        {
+            "Value": "MES1-EBS:VolumeIOUsage"
+        },
+        {
+            "Value": "MES1-EBS:VolumeP-IOPS.gp3"
+        },
+        {
+            "Value": "MES1-EBS:VolumeP-IOPS.io2.tier2"
+        },
+        {
+            "Value": "MES1-EBS:VolumeP-IOPS.io2.tier3"
+        },
+        {
+            "Value": "MES1-EBS:VolumeP-IOPS.io2"
+        },
+        {
+            "Value": "MES1-EBS:VolumeP-IOPS.piops"
+        },
+        {
+            "Value": "MES1-EBS:VolumeP-Throughput.gp3"
+        },
+        {
+            "Value": "MES1-EBS:VolumeUsage.gp2"
+        },
+        {
+            "Value": "MES1-EBS:VolumeUsage.gp3"
+        },
+        {
+            "Value": "MES1-EBS:VolumeUsage.io2"
+        },
+        {
+            "Value": "MES1-EBS:VolumeUsage.piops"
+        },
+        {
+            "Value": "MES1-EBS:VolumeUsage.sc1"
+        },
+        {
+            "Value": "MES1-EBS:VolumeUsage.st1"
+        },
+        {
+            "Value": "MES1-EBS:VolumeUsage"
+        },
+        {
+            "Value": "MES1-EBS:directAPI.snapshot.Get"
+        },
+        {
+            "Value": "MES1-EBS:directAPI.snapshot.List"
+        },
+        {
+            "Value": "MES1-EBS:directAPI.snapshot.Put"
+        },
+        {
+            "Value": "MES1-ElasticIP:AdditionalAddress"
+        },
+        {
+            "Value": "MES1-ElasticIP:IdleAddress"
+        },
+        {
+            "Value": "MES1-ElasticIP:Remap"
+        },        {
+            "Value": "MES1-LCUUsage"
+        },
+        {
+            "Value": "MES1-LoadBalancerUsage"
+        },        {
+            "Value": "MES1-NatGateway-Hours"
+        },        {
+            "Value": "MES1-NatGateway-Prvd-Gbps"
+        },        {
+            "Value": "MIA1-CPUCredits:t3"
+        },        {
+            "Value": "MIA1-EBS:VolumeUsage.gp2"
+        },
+        {
+            "Value": "NatGateway-Hours"
+        },        {
+            "Value": "NatGateway-Prvd-Gbps"
+        },        {
+            "Value": "SAE1-CPUCredits:t2"
+        },
+        {
+            "Value": "SAE1-CPUCredits:t3"
+        },
+        {
+            "Value": "SAE1-CPUCredits:t3a"
+        },
+        {
+            "Value": "SAE1-EBS:FastSnapshotRestore"
+        },
+        {
+            "Value": "SAE1-EBS:SnapshotUsage"
+        },
+        {
+            "Value": "SAE1-EBS:VolumeIOUsage"
+        },
+        {
+            "Value": "SAE1-EBS:VolumeP-IOPS.gp3"
+        },
+        {
+            "Value": "SAE1-EBS:VolumeP-IOPS.piops"
+        },
+        {
+            "Value": "SAE1-EBS:VolumeP-Throughput.gp3"
+        },
+        {
+            "Value": "SAE1-EBS:VolumeUsage.gp2"
+        },
+        {
+            "Value": "SAE1-EBS:VolumeUsage.gp3"
+        },
+        {
+            "Value": "SAE1-EBS:VolumeUsage.piops"
+        },
+        {
+            "Value": "SAE1-EBS:VolumeUsage.sc1"
+        },
+        {
+            "Value": "SAE1-EBS:VolumeUsage.st1"
+        },
+        {
+            "Value": "SAE1-EBS:VolumeUsage"
+        },
+        {
+            "Value": "SAE1-EBS:directAPI.snapshot.Get"
+        },
+        {
+            "Value": "SAE1-EBS:directAPI.snapshot.List"
+        },
+        {
+            "Value": "SAE1-EBS:directAPI.snapshot.Put"
+        },        {
+            "Value": "SAE1-ElasticIP:AdditionalAddress"
+        },
+        {
+            "Value": "SAE1-ElasticIP:IdleAddress"
+        },
+        {
+            "Value": "SAE1-ElasticIP:Remap"
+        },
+        {
+            "Value": "SAE1-LCUUsage"
+        },
+        {
+            "Value": "SAE1-LoadBalancerUsage"
+        },        {
+            "Value": "SAE1-NatGateway-Hours"
+        },
+        {
+            "Value": "UGE1-CPUCredits:t2"
+        },
+        {
+            "Value": "UGE1-CPUCredits:t3"
+        },
+        {
+            "Value": "UGE1-CPUCredits:t3a"
+        },
+        {
+            "Value": "UGE1-EBS:FastSnapshotRestore"
+        },
+        {
+            "Value": "UGE1-EBS:SnapshotUsage"
+        },
+        {
+            "Value": "UGE1-EBS:VolumeIOUsage"
+        },
+        {
+            "Value": "UGE1-EBS:VolumeP-IOPS.gp3"
+        },
+        {
+            "Value": "UGE1-EBS:VolumeP-IOPS.piops"
+        },
+        {
+            "Value": "UGE1-EBS:VolumeP-Throughput.gp3"
+        },
+        {
+            "Value": "UGE1-EBS:VolumeUsage.gp2"
+        },
+        {
+            "Value": "UGE1-EBS:VolumeUsage.gp3"
+        },
+        {
+            "Value": "UGE1-EBS:VolumeUsage.piops"
+        },
+        {
+            "Value": "UGE1-EBS:VolumeUsage.sc1"
+        },
+        {
+            "Value": "UGE1-EBS:VolumeUsage.st1"
+        },
+        {
+            "Value": "UGE1-EBS:VolumeUsage"
+        },
+        {
+            "Value": "UGE1-EBS:directAPI.snapshot.Get"
+        },
+        {
+            "Value": "UGE1-EBS:directAPI.snapshot.List"
+        },
+        {
+            "Value": "UGE1-EBS:directAPI.snapshot.Put"
+        },
+        {
+            "Value": "UGE1-ElasticIP:AdditionalAddress"
+        },
+        {
+            "Value": "UGE1-ElasticIP:IdleAddress"
+        },
+        {
+            "Value": "UGE1-ElasticIP:Remap"
+        },
+        {
+            "Value": "UGE1-LCUUsage"
+        },
+        {
+            "Value": "UGE1-LoadBalancerUsage"
+        },        {
+            "Value": "UGE1-NatGateway-Hours"
+        },        {
+            "Value": "UGW1-EBS:FastSnapshotRestore"
+        },
+        {
+            "Value": "UGW1-EBS:SnapshotUsage"
+        },
+        {
+            "Value": "UGW1-EBS:VolumeIOUsage"
+        },
+        {
+            "Value": "UGW1-EBS:VolumeP-IOPS.gp3"
+        },
+        {
+            "Value": "UGW1-EBS:VolumeP-IOPS.piops"
+        },
+        {
+            "Value": "UGW1-EBS:VolumeP-Throughput.gp3"
+        },
+        {
+            "Value": "UGW1-EBS:VolumeUsage.gp2"
+        },
+        {
+            "Value": "UGW1-EBS:VolumeUsage.gp3"
+        },
+        {
+            "Value": "UGW1-EBS:VolumeUsage.piops"
+        },
+        {
+            "Value": "UGW1-EBS:VolumeUsage.sc1"
+        },
+        {
+            "Value": "UGW1-EBS:VolumeUsage.st1"
+        },
+        {
+            "Value": "UGW1-EBS:VolumeUsage"
+        },
+        {
+            "Value": "UGW1-EBS:directAPI.snapshot.Get"
+        },
+        {
+            "Value": "UGW1-EBS:directAPI.snapshot.List"
+        },
+        {
+            "Value": "UGW1-EBS:directAPI.snapshot.Put"
+        },        {
+            "Value": "UGW1-ElasticIP:AdditionalAddress"
+        },
+        {
+            "Value": "UGW1-ElasticIP:IdleAddress"
+        },
+        {
+            "Value": "UGW1-ElasticIP:Remap"
+        },
+        {
+            "Value": "UGW1-LCUUsage"
+        },
+        {
+            "Value": "UGW1-LoadBalancerUsage"
+        },        {
+            "Value": "UGW1-NatGateway-Hours"
+        },
+        {
+            "Value": "USE1-EBS:FastSnapshotRestore"
+        },
+        {
+            "Value": "USE1-EBS:directAPI.snapshot.Get"
+        },
+        {
+            "Value": "USE1-EBS:directAPI.snapshot.List"
+        },
+        {
+            "Value": "USE1-EBS:directAPI.snapshot.Put"
+        },
+        {
+            "Value": "USE1WL1-CarrierIP:AdditionalAddress"
+        },
+        {
+            "Value": "USE1WL1-CarrierIP:IdleAddress"
+        },
+        {
+            "Value": "USE1WL1-CarrierIP:Remap"
+        },
+        {
+            "Value": "USE1WL1-EBS:VolumeUsage.gp2"
+        },
+        {
+            "Value": "USE1WL1ATL1-CarrierIP:AdditionalAddress"
+        },
+        {
+            "Value": "USE1WL1ATL1-CarrierIP:IdleAddress"
+        },
+        {
+            "Value": "USE1WL1ATL1-CarrierIP:Remap"
+        },
+        {
+            "Value": "USE1WL1ATL1-EBS:VolumeUsage.gp2"
+        },
+        {
+            "Value": "USE1WL1BWAS1-CarrierIP:AdditionalAddress"
+        },
+        {
+            "Value": "USE1WL1BWAS1-CarrierIP:IdleAddress"
+        },
+        {
+            "Value": "USE1WL1BWAS1-CarrierIP:Remap"
+        },
+        {
+            "Value": "USE1WL1BWAS1-EBS:VolumeUsage.gp2"
+        },
+        {
+            "Value": "USE1WL1DFW1-CarrierIP:AdditionalAddress"
+        },
+        {
+            "Value": "USE1WL1DFW1-CarrierIP:IdleAddress"
+        },
+        {
+            "Value": "USE1WL1DFW1-CarrierIP:Remap"
+        },
+        {
+            "Value": "USE1WL1DFW1-EBS:VolumeUsage.gp2"
+        },
+        {
+            "Value": "USE1WL1MIA1-CPUCredits:t3"
+        },
+        {
+            "Value": "USE1WL1MIA1-CarrierIP:AdditionalAddress"
+        },
+        {
+            "Value": "USE1WL1MIA1-CarrierIP:IdleAddress"
+        },
+        {
+            "Value": "USE1WL1MIA1-CarrierIP:Remap"
+        },        {
+            "Value": "USE1WL1MIA1-EBS:VolumeUsage.gp2"
+        },
+        {
+            "Value": "USE1WL1NYC1-CarrierIP:AdditionalAddress"
+        },
+        {
+            "Value": "USE1WL1NYC1-CarrierIP:IdleAddress"
+        },
+        {
+            "Value": "USE1WL1NYC1-CarrierIP:Remap"
+        },
+        {
+            "Value": "USE1WL1NYC1-EBS:VolumeUsage.gp2"
+        },
+        {
+            "Value": "USE2-CPUCredits:t2"
+        },
+        {
+            "Value": "USE2-CPUCredits:t3"
+        },
+        {
+            "Value": "USE2-CPUCredits:t4g"
+        },
+        {
+            "Value": "USE2-EBS:FastSnapshotRestore"
+        },
+        {
+            "Value": "USE2-EBS:SnapshotUsage"
+        },
+        {
+            "Value": "USE2-EBS:VolumeIOUsage"
+        },
+        {
+            "Value": "USE2-EBS:VolumeP-IOPS.gp3"
+        },
+        {
+            "Value": "USE2-EBS:VolumeP-IOPS.io2.tier2"
+        },
+        {
+            "Value": "USE2-EBS:VolumeP-IOPS.io2.tier3"
+        },
+        {
+            "Value": "USE2-EBS:VolumeP-IOPS.io2"
+        },
+        {
+            "Value": "USE2-EBS:VolumeP-IOPS.piops"
+        },
+        {
+            "Value": "USE2-EBS:VolumeP-Throughput.gp3"
+        },
+        {
+            "Value": "USE2-EBS:VolumeUsage.gp2"
+        },
+        {
+            "Value": "USE2-EBS:VolumeUsage.gp3"
+        },
+        {
+            "Value": "USE2-EBS:VolumeUsage.io2"
+        },
+        {
+            "Value": "USE2-EBS:VolumeUsage.piops"
+        },
+        {
+            "Value": "USE2-EBS:VolumeUsage.sc1"
+        },
+        {
+            "Value": "USE2-EBS:VolumeUsage.st1"
+        },
+        {
+            "Value": "USE2-EBS:VolumeUsage"
+        },
+        {
+            "Value": "USE2-EBS:directAPI.snapshot.Get"
+        },
+        {
+            "Value": "USE2-EBS:directAPI.snapshot.List"
+        },
+        {
+            "Value": "USE2-EBS:directAPI.snapshot.Put"
+        },        {
+            "Value": "USE2-EGpuUsage:eg1.2xlarge"
+        },
+        {
+            "Value": "USE2-EGpuUsage:eg1.large"
+        },
+        {
+            "Value": "USE2-EGpuUsage:eg1.medium"
+        },
+        {
+            "Value": "USE2-EGpuUsage:eg1.xlarge"
+        },
+        {
+            "Value": "USE2-ElasticIP:AdditionalAddress"
+        },
+        {
+            "Value": "USE2-ElasticIP:IdleAddress"
+        },
+        {
+            "Value": "USE2-ElasticIP:Remap"
+        },
+        {
+            "Value": "USE2-LCUUsage"
+        },
+        {
+            "Value": "USE2-LoadBalancerUsage"
+        },        {
+            "Value": "USE2-NatGateway-Hours"
+        },
+        {
+            "Value": "USW1-CPUCredits:t2"
+        },
+        {
+            "Value": "USW1-CPUCredits:t3"
+        },
+        {
+            "Value": "USW1-CPUCredits:t3a"
+        },        {
+            "Value": "USW1-EBS:FastSnapshotRestore"
+        },
+        {
+            "Value": "USW1-EBS:SnapshotUsage"
+        },
+        {
+            "Value": "USW1-EBS:VolumeIOUsage"
+        },
+        {
+            "Value": "USW1-EBS:VolumeP-IOPS.gp3"
+        },
+        {
+            "Value": "USW1-EBS:VolumeP-IOPS.io2.tier2"
+        },
+        {
+            "Value": "USW1-EBS:VolumeP-IOPS.io2.tier3"
+        },
+        {
+            "Value": "USW1-EBS:VolumeP-IOPS.io2"
+        },
+        {
+            "Value": "USW1-EBS:VolumeP-IOPS.piops"
+        },
+        {
+            "Value": "USW1-EBS:VolumeP-Throughput.gp3"
+        },
+        {
+            "Value": "USW1-EBS:VolumeUsage.gp2"
+        },
+        {
+            "Value": "USW1-EBS:VolumeUsage.gp3"
+        },
+        {
+            "Value": "USW1-EBS:VolumeUsage.io2"
+        },
+        {
+            "Value": "USW1-EBS:VolumeUsage.piops"
+        },
+        {
+            "Value": "USW1-EBS:VolumeUsage.sc1"
+        },
+        {
+            "Value": "USW1-EBS:VolumeUsage.st1"
+        },
+        {
+            "Value": "USW1-EBS:VolumeUsage"
+        },
+        {
+            "Value": "USW1-EBS:directAPI.snapshot.Get"
+        },
+        {
+            "Value": "USW1-EBS:directAPI.snapshot.List"
+        },
+        {
+            "Value": "USW1-EBS:directAPI.snapshot.Put"
+        },        {
+            "Value": "USW1-ElasticIP:AdditionalAddress"
+        },
+        {
+            "Value": "USW1-ElasticIP:IdleAddress"
+        },
+        {
+            "Value": "USW1-ElasticIP:Remap"
+        },        {
+            "Value": "USW1-LCUUsage"
+        },
+        {
+            "Value": "USW1-LoadBalancerUsage"
+        },        {
+            "Value": "USW1-NatGateway-Hours"
+        },        {
+            "Value": "USW1-NatGateway-Prvd-Gbps"
+        },
+        {
+            "Value": "USW2-CPUCredits:t2"
+        },
+        {
+            "Value": "USW2-CPUCredits:t3"
+        },
+        {
+            "Value": "USW2-CPUCredits:t3a"
+        },
+        {
+            "Value": "USW2-CPUCredits:t4g"
+        },
+        {
+            "Value": "USW2-EBS:FastSnapshotRestore"
+        },
+        {
+            "Value": "USW2-EBS:SnapshotUnderBilling"
+        },
+        {
+            "Value": "USW2-EBS:SnapshotUsage.outposts"
+        },
+        {
+            "Value": "USW2-EBS:SnapshotUsage"
+        },
+        {
+            "Value": "USW2-EBS:VolumeIOUsage"
+        },
+        {
+            "Value": "USW2-EBS:VolumeP-IOPS.gp3"
+        },
+        {
+            "Value": "USW2-EBS:VolumeP-IOPS.io2.tier2"
+        },
+        {
+            "Value": "USW2-EBS:VolumeP-IOPS.io2.tier3"
+        },
+        {
+            "Value": "USW2-EBS:VolumeP-IOPS.io2"
+        },
+        {
+            "Value": "USW2-EBS:VolumeP-IOPS.piops"
+        },
+        {
+            "Value": "USW2-EBS:VolumeP-Throughput.gp3"
+        },
+        {
+            "Value": "USW2-EBS:VolumeUsage.gp2"
+        },
+        {
+            "Value": "USW2-EBS:VolumeUsage.gp3"
+        },
+        {
+            "Value": "USW2-EBS:VolumeUsage.io2"
+        },
+        {
+            "Value": "USW2-EBS:VolumeUsage.piops"
+        },
+        {
+            "Value": "USW2-EBS:VolumeUsage.sc1"
+        },
+        {
+            "Value": "USW2-EBS:VolumeUsage.st1"
+        },
+        {
+            "Value": "USW2-EBS:VolumeUsage"
+        },
+        {
+            "Value": "USW2-EBS:directAPI.snapshot.Get"
+        },
+        {
+            "Value": "USW2-EBS:directAPI.snapshot.List"
+        },
+        {
+            "Value": "USW2-EBS:directAPI.snapshot.Put"
+        },
+        {
+            "Value": "USW2-EGpuUsage:eg1.2xlarge"
+        },
+        {
+            "Value": "USW2-EGpuUsage:eg1.large"
+        },
+        {
+            "Value": "USW2-EGpuUsage:eg1.medium"
+        },
+        {
+            "Value": "USW2-EGpuUsage:eg1.xlarge"
+        },
+        {
+            "Value": "USW2-ElasticIP:AdditionalAddress"
+        },
+        {
+            "Value": "USW2-ElasticIP:IdleAddress"
+        },
+        {
+            "Value": "USW2-ElasticIP:Remap"
+        },        {
+            "Value": "USW2-LCUUsage"
+        },
+        {
+            "Value": "USW2-LoadBalancerUsage"
+        },        {
+            "Value": "USW2-NatGateway-Hours"
+        },        {
+            "Value": "USW2-NatGateway-Prvd-Gbps"
+        },
+        {
+            "Value": "USW2WL1-CarrierIP:AdditionalAddress"
+        },
+        {
+            "Value": "USW2WL1-CarrierIP:IdleAddress"
+        },
+        {
+            "Value": "USW2WL1-CarrierIP:Remap"
+        },
+        {
+            "Value": "USW2WL1-EBS:VolumeUsage.gp2"
+        },
+        {
+            "Value": "USW2WL1DEN1-CarrierIP:AdditionalAddress"
+        },
+        {
+            "Value": "USW2WL1DEN1-CarrierIP:IdleAddress"
+        },
+        {
+            "Value": "USW2WL1DEN1-CarrierIP:Remap"
+        },
+        {
+            "Value": "USW2WL1DEN1-EBS:VolumeUsage.gp2"
+        },
+        {
+            "Value": "USW2WL1LAS1-CarrierIP:AdditionalAddress"
+        },
+        {
+            "Value": "USW2WL1LAS1-CarrierIP:IdleAddress"
+        },
+        {
+            "Value": "USW2WL1LAS1-CarrierIP:Remap"
+        },
+        {
+            "Value": "USW2WL1LAS1-EBS:VolumeUsage.gp2"
+        },
+        {
+            "Value": "USW2WL1SEA1-CarrierIP:AdditionalAddress"
+        },
+        {
+            "Value": "USW2WL1SEA1-CarrierIP:IdleAddress"
+        },
+        {
+            "Value": "USW2WL1SEA1-CarrierIP:Remap"
+        },
+        {
+            "Value": "USW2WL1SEA1-EBS:VolumeUsage.gp2"
+        }
+    ]
+}
