@@ -10,43 +10,38 @@ If you are looking into alternative ways calculating AWS infrastructure costs (f
 
 This is not an official HashiCorp product.
 
-## Features/goals
+## Supported Features
 
-- [x] Calculate costs before creation:
-  - [x] tfplan
-- [x] Calculate costs after creation:
-  - [x] tfstate
-- [x] Calculate costs from multiple sources (local, remote states, specified resources)
-- [x] Optionally, using [cost.modules.tf](https://cost.modules.tf/)
-- [x] Can be executed on restricted CI/CD platforms where Terraform can run
+- Calculate costs before creation (tfplan)
+- Calculate costs after creation (tfstate)
+- Calculate costs from multiple sources (local, remote states, specified resources)
+- Optionally, using [cost.modules.tf](https://cost.modules.tf/)
+- Can be executed on restricted CI/CD platforms where Terraform can run
 
+## Supported Resources
 
-## Supported resources
+- EC2 instances (on-demand) and Autoscaling Groups (Launch Configurations and Launch Templates):
+  - aws_instance
+- EBS Volumes, Snapshots, Snapshot Copies
+  - aws_ebs_volume
+  - aws_ebs_snapshot
+  - aws_ebs_snapshot_copy
+- Elastic Load Balancing (ELB, ALB, NLB)
+  - aws_elb
+  - aws_alb / aws_lb
+- NAT Gateways
+  - aws_nat_gateway
+- Redshift Clusters
+  - aws_redshift_cluster
 
-1. EC2 instances (on-demand) and Autoscaling Groups (Launch Configurations and Launch Templates):
-- [x] aws_instance
-- [ ] aws_autoscaling_group
-- [ ] aws_launch_configuration
-- [ ] aws_launch_template
+## Feature Roadmap
 
-2. EC2 Fleets (on-demand)
-- [ ] aws_ec2_fleet
-
-3. EBS Volumes, Snapshots, Snapshot Copies
-- [x] aws_ebs_volume
-- [x] aws_ebs_snapshot
-- [x] aws_ebs_snapshot_copy
-
-4. Elastic Load Balancing (ELB, ALB, NLB)
-- [x] aws_elb
-- [x] aws_alb / aws_lb
-
-5. NAT Gateways
-- [x] aws_nat_gateway
-
-6. Redshift Clusters
-- [x] aws_redshift_cluster
-
+- More EC2 instances (on-demand) and Autoscaling Groups (Launch Configurations and Launch Templates)
+  - aws_autoscaling_group
+  - aws_launch_configuration
+  - aws_launch_template
+- EC2 Fleets (on-demand)
+  - aws_ec2_fleet
 
 ## Usages
 
