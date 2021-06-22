@@ -3,7 +3,8 @@ data "aws_regions" "all" {
 }
 
 data "aws_region" "one" {
-  for_each = data.aws_regions.all.names
+#  for_each = data.aws_regions.all.names
+  for_each = {for k, v in data.aws_regions.all.names: k => v if ! contains(["ap-northeast-3"], k) }
 
   name = each.value
 }
