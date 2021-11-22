@@ -21,27 +21,36 @@ Run `terraform destroy` when you don't need these resources.
 
 | Name | Version |
 |------|---------|
-| terraform | >= 0.12.6 |
-| aws | >= 3 |
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 0.12.6 |
+| <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 3 |
 
 ## Providers
 
-No provider.
+No providers.
+
+## Modules
+
+| Name | Source | Version |
+|------|--------|---------|
+| <a name="module_pricing"></a> [pricing](#module\_pricing) | ../../modules/pricing | n/a |
+
+## Resources
+
+No resources.
 
 ## Inputs
 
-No input.
+No inputs.
 
 ## Outputs
 
 | Name | Description |
 |------|-------------|
-| input\_resources | Map of input resource filters (from plan/state or static) |
-| pricing\_per\_resources | Map of resource pricing |
-| pricing\_product\_filters | Map of pricing product filters (as they are submitted using data source `aws_pricing_product`) |
-| resource\_quantity | Map of resource quantity |
-| resources | Map of provided resources with filters |
-| total\_price\_per\_hour | Total price for all resources |
-| total\_price\_per\_month | Total price for all resources per month (730 hours) |
-
+| <a name="output_input_resources"></a> [input\_resources](#output\_input\_resources) | Map of input resource filters (from plan/state or static) |
+| <a name="output_pricing_per_resources"></a> [pricing\_per\_resources](#output\_pricing\_per\_resources) | Map of resource pricing |
+| <a name="output_pricing_product_filters"></a> [pricing\_product\_filters](#output\_pricing\_product\_filters) | Map of pricing product filters (as they are submitted using data source `aws_pricing_product`) |
+| <a name="output_resource_quantity"></a> [resource\_quantity](#output\_resource\_quantity) | Map of resource quantity |
+| <a name="output_resources"></a> [resources](#output\_resources) | Map of provided resources with filters |
+| <a name="output_total_price_per_hour"></a> [total\_price\_per\_hour](#output\_total\_price\_per\_hour) | Total price for all resources |
+| <a name="output_total_price_per_month"></a> [total\_price\_per\_month](#output\_total\_price\_per\_month) | Total price for all resources per month (730 hours) |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
