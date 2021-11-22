@@ -35,4 +35,3 @@ while IFS=$'\n' read -ra commands; do
 
   done
 done <<< "$aws_cli_commands"
-
