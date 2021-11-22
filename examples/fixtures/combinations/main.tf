@@ -15,35 +15,27 @@ data "aws_subnet_ids" "all" {
 
 data "aws_ami" "amazon_linux" {
   most_recent = true
-
-  owners = ["amazon"]
+  owners      = ["amazon"]
 
   filter {
-    name = "name"
-
-    values = [
-      "amzn-ami-hvm-*-x86_64-gp2",
-    ]
+    name   = "name"
+    values = ["amzn-ami-hvm-*-x86_64-gp2"]
   }
 
   filter {
-    name = "owner-alias"
-
-    values = [
-      "amazon",
-    ]
+    name   = "owner-alias"
+    values = ["amazon"]
   }
 }
 
 module "instance_count_2" {
-  source = "terraform-aws-modules/ec2-instance/aws"
-
-  instance_count = 2
+  source  = "terraform-aws-modules/ec2-instance/aws"
+  version = "~> 3.0"
 
   name          = "instance_count_"
   ami           = data.aws_ami.amazon_linux.id
   instance_type = "t2.micro"
-  subnet_id     = tolist(data.aws_subnet_ids.all.ids)[0]
+  subnet_id     = element(data.aws_subnet_ids.all.ids, 0)
 
   root_block_device = [
     {
@@ -54,15 +46,13 @@ module "instance_count_2" {
 }
 
 module "module_count_2" {
-  source = "terraform-aws-modules/ec2-instance/aws"
+  source  = "terraform-aws-modules/ec2-instance/aws"
+  version = "~> 3.0"
 
-  count = 2
-
-  name = "module_count_"
-
+  name          = "module_count_"
   ami           = data.aws_ami.amazon_linux.id
   instance_type = "t2.nano"
-  subnet_id     = tolist(data.aws_subnet_ids.all.ids)[0]
+  subnet_id     = element(data.aws_subnet_ids.all.ids, 0)
 
 }
 
@@ -78,7 +68,7 @@ resource "aws_instance" "nano_count_2" {
 
   ami           = data.aws_ami.amazon_linux.id
   instance_type = "t3.nano"
-  subnet_id     = tolist(data.aws_subnet_ids.all.ids)[0]
+  subnet_id     = element(data.aws_subnet_ids.all.ids, 0)
 }
 
 ##########
@@ -88,18 +78,7 @@ resource "aws_instance" "small_for_each_fixed" {
 
   ami           = data.aws_ami.amazon_linux.id
   instance_type = "t3.small"
-  subnet_id     = tolist(data.aws_subnet_ids.all.ids)[0]
+  subnet_id     = element(data.aws_subnet_ids.all.ids, 0)
 
   tags = { Name : each.value }
 }
-
-#resource "aws_instance" "small_for_each_dynamic" {
-#  for_each = { for k, v in module.module_count_2 : k => v }
-#
-#  ami           = data.aws_ami.amazon_linux.id
-#  instance_type = "t3.small"
-#  subnet_id     = tolist(data.aws_subnet_ids.all.ids)[0]
-#
-#  tags = { Name : each.value }
-#}
-#
