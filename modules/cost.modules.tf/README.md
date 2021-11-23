@@ -11,33 +11,44 @@ See [repository terraform-cost-estimation](https://github.com/antonbabenko/terra
 
 | Name | Version |
 |------|---------|
-| terraform | >= 0.12.6 |
-| aws | >= 3 |
-| local | >= 1 |
-| null | >= 2 |
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 0.12.6 |
+| <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 3 |
+| <a name="requirement_local"></a> [local](#requirement\_local) | >= 1 |
+| <a name="requirement_null"></a> [null](#requirement\_null) | >= 2 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| local | >= 1 |
-| null | >= 2 |
+| <a name="provider_local"></a> [local](#provider\_local) | >= 1 |
+| <a name="provider_null"></a> [null](#provider\_null) | >= 2 |
+
+## Modules
+
+No modules.
+
+## Resources
+
+| Name | Type |
+|------|------|
+| [local_file.json_input](https://registry.terraform.io/providers/hashicorp/local/latest/docs/resources/file) | resource |
+| [null_resource.curl](https://registry.terraform.io/providers/hashicorp/null/latest/docs/resources/resource) | resource |
+| [null_data_source.costs](https://registry.terraform.io/providers/hashicorp/null/latest/docs/data-sources/data_source) | data source |
 
 ## Inputs
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| content | Content of tfstate or plan file as json | `string` | n/a | yes |
-| enabled | Whether to enable this module and call cost.modules.tf | `bool` | `true` | no |
-| filename\_hash | Extra hash to add to created filenames | `string` | `""` | no |
-| tmp\_dir | Name of local temp directory to create files in | `string` | `"tmp"` | no |
+| <a name="input_content"></a> [content](#input\_content) | Content of tfstate or plan file as json | `string` | n/a | yes |
+| <a name="input_enabled"></a> [enabled](#input\_enabled) | Whether to enable this module and call cost.modules.tf | `bool` | `true` | no |
+| <a name="input_filename_hash"></a> [filename\_hash](#input\_filename\_hash) | Extra hash to add to created filenames | `string` | `""` | no |
+| <a name="input_tmp_dir"></a> [tmp\_dir](#input\_tmp\_dir) | Name of local temp directory to create files in | `string` | `"tmp"` | no |
 
 ## Outputs
 
 | Name | Description |
 |------|-------------|
-| costs | Total costs |
-| hourly | Hourly costs |
-| monthly | Monthly costs |
-
+| <a name="output_costs"></a> [costs](#output\_costs) | Total costs |
+| <a name="output_hourly"></a> [hourly](#output\_hourly) | Hourly costs |
+| <a name="output_monthly"></a> [monthly](#output\_monthly) | Monthly costs |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
