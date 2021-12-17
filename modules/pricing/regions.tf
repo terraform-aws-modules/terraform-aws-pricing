@@ -4,7 +4,7 @@ data "aws_regions" "all" {
 
 data "aws_region" "one" {
   #  for_each = data.aws_regions.all.names
-  for_each = { for k, v in data.aws_regions.all.names : k => v if !contains(["ap-northeast-3", "ap-southeast-3"], k) }
+  for_each = { for k, v in data.aws_regions.all.names : k => v if !contains(["ap-northeast-3"], k) }
 
   name = each.value
 }
@@ -13,7 +13,6 @@ locals {
   # Note: Adding more regions and local zones. Copied from https://github.com/powdahound/ec2instances.info/blob/master/ec2.py
   all_aws_regions = merge({ for k, v in data.aws_region.one : replace(v.description, "Europe", "EU") => k }, {
     "Asia Pacific (Osaka-Local)" = "ap-northeast-3"
-    "Asia Pacific (Jakarta)"     = "ap-southeast-3"
     "US West (Los Angeles)"      = "us-west-2"
   })
 }
