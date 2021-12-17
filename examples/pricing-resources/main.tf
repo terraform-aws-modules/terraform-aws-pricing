@@ -13,8 +13,8 @@ module "pricing" {
       location     = "eu-west-2"
     }
     "aws_instance.this2" = {
-      instanceType = "c4.xlarge"
-      location     = "eu-west-1"
+      instanceType = "t3.large"
+      location     = "ap-southeast-3"
     }
   }
 }
