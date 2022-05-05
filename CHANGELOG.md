@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+### [1.3.1](https://github.com/terraform-aws-modules/terraform-aws-pricing/compare/v1.3.0...v1.3.1) (2022-05-05)
+
+
+### Bug Fixes
+
+* Corrects errors when plan contains no pricing changes ([#8](https://github.com/terraform-aws-modules/terraform-aws-pricing/issues/8)) ([8a062b9](https://github.com/terraform-aws-modules/terraform-aws-pricing/commit/8a062b92b966196f93ca505113470dcc5d6f4568))
+
 # [1.3.0](https://github.com/terraform-aws-modules/terraform-aws-pricing/compare/v1.2.0...v1.3.0) (2021-12-17)
 
 
