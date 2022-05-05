@@ -55,7 +55,7 @@ locals {
 
   instances_map = local.input_type == "plan" ? local.normalized_plan_instances : local.normalized_state_instances
 
-  instances_stripped_keys = local.instances_map == {} ? [] : concat([
+  instances_stripped_keys = local.input_type == "empty" || length(local.instances_map) == 0 ? [] : concat([
     for k, v in local.instances_map :
     setproduct([k], keys(v))
   ]...)
