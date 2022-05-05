@@ -6,7 +6,15 @@ locals {
   # State - all resources are linear
   # Plan - combine root_module.resources and root_module.child_modules
   content_resources_state = local.input_type == "state" ? jsonencode(local.content.resources) : jsonencode({})
-  content_resources_plan  = local.input_type == "plan" ? jsonencode(concat(lookup(local.content.planned_values.root_module, "resources", []), flatten(concat([for m in lookup(local.content.planned_values.root_module, "child_modules", {}) : m.resources])))) : jsonencode({})
+
+  # local.content.planned_values includes more changes than what will actually occur.
+  # Instead query 'resource_changes' and filter by the actions that will be taken
+  content_resources_plan = local.input_type == "plan" ? jsonencode(
+    lookup(
+      local.content, "resource_changes", []
+    )
+  ) : jsonencode({})
+
 
   content_resources_string = local.input_type == "plan" ? local.content_resources_plan : local.content_resources_state
 
@@ -30,9 +38,13 @@ locals {
     for v in local.instances :
     join(".", compact([v.type, v.name, v.address])) => {
       0 : (
-        jsonencode(merge(v.values, { "_type" : v.type }))
+        jsonencode(merge(v.change.after, { "_type" : v.type }))
       )
     }
+    # For now include both 'created' and 'updated' resources.
+    # TODO: Reduce cost by calculating 'delete' actions and by doing a full comparison of
+    # 'update' actions
+    if contains(v.change.actions, "create") || contains(v.change.actions, "update")
   } : {}
 
   # Normalize structure when input is "state" into:
