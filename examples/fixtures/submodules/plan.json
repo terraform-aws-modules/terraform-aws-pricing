@@ -1,0 +1,714 @@
+{
+  "format_version": "0.2",
+  "terraform_version": "1.0.5",
+  "planned_values": {
+    "root_module": {
+      "resources": [
+        {
+          "address": "aws_instance.root-instance",
+          "mode": "managed",
+          "type": "aws_instance",
+          "name": "root-instance",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "ami": "ami-02b39e8cf8e0bcd8f",
+            "credit_specification": [],
+            "get_password_data": false,
+            "hibernation": null,
+            "iam_instance_profile": null,
+            "instance_type": "t3.small",
+            "launch_template": [],
+            "source_dest_check": true,
+            "tags": null,
+            "timeouts": null,
+            "user_data_replace_on_change": false,
+            "volume_tags": null
+          },
+          "sensitive_values": {
+            "capacity_reservation_specification": [],
+            "credit_specification": [],
+            "ebs_block_device": [],
+            "enclave_options": [],
+            "ephemeral_block_device": [],
+            "ipv6_addresses": [],
+            "launch_template": [],
+            "maintenance_options": [],
+            "metadata_options": [],
+            "network_interface": [],
+            "root_block_device": [],
+            "secondary_private_ips": [],
+            "security_groups": [],
+            "tags_all": {},
+            "vpc_security_group_ids": []
+          }
+        }
+      ],
+      "child_modules": [
+        {
+          "resources": [
+            {
+              "address": "module.asubmodule.aws_ebs_volume.submodule1-ebsvol",
+              "mode": "managed",
+              "type": "aws_ebs_volume",
+              "name": "submodule1-ebsvol",
+              "provider_name": "registry.terraform.io/hashicorp/aws",
+              "schema_version": 0,
+              "values": {
+                "availability_zone": "eu-west-1a",
+                "multi_attach_enabled": null,
+                "outpost_arn": null,
+                "size": 10,
+                "tags": null
+              },
+              "sensitive_values": {
+                "tags_all": {}
+              }
+            },
+            {
+              "address": "module.asubmodule.aws_instance.submodule1-instance",
+              "mode": "managed",
+              "type": "aws_instance",
+              "name": "submodule1-instance",
+              "provider_name": "registry.terraform.io/hashicorp/aws",
+              "schema_version": 1,
+              "values": {
+                "ami": "ami-02b39e8cf8e0bcd8f",
+                "credit_specification": [],
+                "get_password_data": false,
+                "hibernation": null,
+                "iam_instance_profile": null,
+                "instance_type": "t3.small",
+                "launch_template": [],
+                "source_dest_check": true,
+                "tags": null,
+                "timeouts": null,
+                "user_data_replace_on_change": false,
+                "volume_tags": null
+              },
+              "sensitive_values": {
+                "capacity_reservation_specification": [],
+                "credit_specification": [],
+                "ebs_block_device": [],
+                "enclave_options": [],
+                "ephemeral_block_device": [],
+                "ipv6_addresses": [],
+                "launch_template": [],
+                "maintenance_options": [],
+                "metadata_options": [],
+                "network_interface": [],
+                "root_block_device": [],
+                "secondary_private_ips": [],
+                "security_groups": [],
+                "tags_all": {},
+                "vpc_security_group_ids": []
+              }
+            }
+          ],
+          "address": "module.asubmodule"
+        }
+      ]
+    }
+  },
+  "resource_changes": [
+    {
+      "address": "aws_instance.root-instance",
+      "mode": "managed",
+      "type": "aws_instance",
+      "name": "root-instance",
+      "provider_name": "registry.terraform.io/hashicorp/aws",
+      "change": {
+        "actions": [
+          "create"
+        ],
+        "before": null,
+        "after": {
+          "ami": "ami-02b39e8cf8e0bcd8f",
+          "credit_specification": [],
+          "get_password_data": false,
+          "hibernation": null,
+          "iam_instance_profile": null,
+          "instance_type": "t3.small",
+          "launch_template": [],
+          "source_dest_check": true,
+          "tags": null,
+          "timeouts": null,
+          "user_data_replace_on_change": false,
+          "volume_tags": null
+        },
+        "after_unknown": {
+          "arn": true,
+          "associate_public_ip_address": true,
+          "availability_zone": true,
+          "capacity_reservation_specification": true,
+          "cpu_core_count": true,
+          "cpu_threads_per_core": true,
+          "credit_specification": [],
+          "disable_api_termination": true,
+          "ebs_block_device": true,
+          "ebs_optimized": true,
+          "enclave_options": true,
+          "ephemeral_block_device": true,
+          "host_id": true,
+          "id": true,
+          "instance_initiated_shutdown_behavior": true,
+          "instance_state": true,
+          "ipv6_address_count": true,
+          "ipv6_addresses": true,
+          "key_name": true,
+          "launch_template": [],
+          "maintenance_options": true,
+          "metadata_options": true,
+          "monitoring": true,
+          "network_interface": true,
+          "outpost_arn": true,
+          "password_data": true,
+          "placement_group": true,
+          "placement_partition_number": true,
+          "primary_network_interface_id": true,
+          "private_dns": true,
+          "private_ip": true,
+          "public_dns": true,
+          "public_ip": true,
+          "root_block_device": true,
+          "secondary_private_ips": true,
+          "security_groups": true,
+          "subnet_id": true,
+          "tags_all": true,
+          "tenancy": true,
+          "user_data": true,
+          "user_data_base64": true,
+          "vpc_security_group_ids": true
+        },
+        "before_sensitive": false,
+        "after_sensitive": {
+          "capacity_reservation_specification": [],
+          "credit_specification": [],
+          "ebs_block_device": [],
+          "enclave_options": [],
+          "ephemeral_block_device": [],
+          "ipv6_addresses": [],
+          "launch_template": [],
+          "maintenance_options": [],
+          "metadata_options": [],
+          "network_interface": [],
+          "root_block_device": [],
+          "secondary_private_ips": [],
+          "security_groups": [],
+          "tags_all": {},
+          "vpc_security_group_ids": []
+        }
+      }
+    },
+    {
+      "address": "module.asubmodule.aws_ebs_volume.submodule1-ebsvol",
+      "module_address": "module.asubmodule",
+      "mode": "managed",
+      "type": "aws_ebs_volume",
+      "name": "submodule1-ebsvol",
+      "provider_name": "registry.terraform.io/hashicorp/aws",
+      "change": {
+        "actions": [
+          "create"
+        ],
+        "before": null,
+        "after": {
+          "availability_zone": "eu-west-1a",
+          "multi_attach_enabled": null,
+          "outpost_arn": null,
+          "size": 10,
+          "tags": null
+        },
+        "after_unknown": {
+          "arn": true,
+          "encrypted": true,
+          "id": true,
+          "iops": true,
+          "kms_key_id": true,
+          "snapshot_id": true,
+          "tags_all": true,
+          "throughput": true,
+          "type": true
+        },
+        "before_sensitive": false,
+        "after_sensitive": {
+          "tags_all": {}
+        }
+      }
+    },
+    {
+      "address": "module.asubmodule.aws_instance.submodule1-instance",
+      "module_address": "module.asubmodule",
+      "mode": "managed",
+      "type": "aws_instance",
+      "name": "submodule1-instance",
+      "provider_name": "registry.terraform.io/hashicorp/aws",
+      "change": {
+        "actions": [
+          "create"
+        ],
+        "before": null,
+        "after": {
+          "ami": "ami-02b39e8cf8e0bcd8f",
+          "credit_specification": [],
+          "get_password_data": false,
+          "hibernation": null,
+          "iam_instance_profile": null,
+          "instance_type": "t3.small",
+          "launch_template": [],
+          "source_dest_check": true,
+          "tags": null,
+          "timeouts": null,
+          "user_data_replace_on_change": false,
+          "volume_tags": null
+        },
+        "after_unknown": {
+          "arn": true,
+          "associate_public_ip_address": true,
+          "availability_zone": true,
+          "capacity_reservation_specification": true,
+          "cpu_core_count": true,
+          "cpu_threads_per_core": true,
+          "credit_specification": [],
+          "disable_api_termination": true,
+          "ebs_block_device": true,
+          "ebs_optimized": true,
+          "enclave_options": true,
+          "ephemeral_block_device": true,
+          "host_id": true,
+          "id": true,
+          "instance_initiated_shutdown_behavior": true,
+          "instance_state": true,
+          "ipv6_address_count": true,
+          "ipv6_addresses": true,
+          "key_name": true,
+          "launch_template": [],
+          "maintenance_options": true,
+          "metadata_options": true,
+          "monitoring": true,
+          "network_interface": true,
+          "outpost_arn": true,
+          "password_data": true,
+          "placement_group": true,
+          "placement_partition_number": true,
+          "primary_network_interface_id": true,
+          "private_dns": true,
+          "private_ip": true,
+          "public_dns": true,
+          "public_ip": true,
+          "root_block_device": true,
+          "secondary_private_ips": true,
+          "security_groups": true,
+          "subnet_id": true,
+          "tags_all": true,
+          "tenancy": true,
+          "user_data": true,
+          "user_data_base64": true,
+          "vpc_security_group_ids": true
+        },
+        "before_sensitive": false,
+        "after_sensitive": {
+          "capacity_reservation_specification": [],
+          "credit_specification": [],
+          "ebs_block_device": [],
+          "enclave_options": [],
+          "ephemeral_block_device": [],
+          "ipv6_addresses": [],
+          "launch_template": [],
+          "maintenance_options": [],
+          "metadata_options": [],
+          "network_interface": [],
+          "root_block_device": [],
+          "secondary_private_ips": [],
+          "security_groups": [],
+          "tags_all": {},
+          "vpc_security_group_ids": []
+        }
+      }
+    }
+  ],
+  "prior_state": {
+    "format_version": "0.2",
+    "terraform_version": "1.0.5",
+    "values": {
+      "root_module": {
+        "resources": [
+          {
+            "address": "data.aws_ami.amazon_linux",
+            "mode": "data",
+            "type": "aws_ami",
+            "name": "amazon_linux",
+            "provider_name": "registry.terraform.io/hashicorp/aws",
+            "schema_version": 0,
+            "values": {
+              "architecture": "x86_64",
+              "arn": "arn:aws:ec2:eu-west-1::image/ami-02b39e8cf8e0bcd8f",
+              "block_device_mappings": [
+                {
+                  "device_name": "/dev/xvda",
+                  "ebs": {
+                    "delete_on_termination": "true",
+                    "encrypted": "false",
+                    "iops": "0",
+                    "snapshot_id": "snap-0fc7e7a61541563f7",
+                    "throughput": "0",
+                    "volume_size": "8",
+                    "volume_type": "gp2"
+                  },
+                  "no_device": "",
+                  "virtual_name": ""
+                }
+              ],
+              "boot_mode": "",
+              "creation_date": "2022-04-19T22:53:43.000Z",
+              "deprecation_time": "2024-04-19T22:53:43.000Z",
+              "description": "Amazon Linux AMI 2018.03.0.20220419.0 x86_64 HVM gp2",
+              "ena_support": true,
+              "executable_users": null,
+              "filter": [
+                {
+                  "name": "name",
+                  "values": [
+                    "amzn-ami-hvm-*-x86_64-gp2"
+                  ]
+                },
+                {
+                  "name": "owner-alias",
+                  "values": [
+                    "amazon"
+                  ]
+                }
+              ],
+              "hypervisor": "xen",
+              "id": "ami-02b39e8cf8e0bcd8f",
+              "image_id": "ami-02b39e8cf8e0bcd8f",
+              "image_location": "amazon/amzn-ami-hvm-2018.03.0.20220419.0-x86_64-gp2",
+              "image_owner_alias": "amazon",
+              "image_type": "machine",
+              "kernel_id": "",
+              "most_recent": true,
+              "name": "amzn-ami-hvm-2018.03.0.20220419.0-x86_64-gp2",
+              "name_regex": null,
+              "owner_id": "137112412989",
+              "owners": [
+                "amazon"
+              ],
+              "platform": "",
+              "platform_details": "Linux/UNIX",
+              "product_codes": [],
+              "public": true,
+              "ramdisk_id": "",
+              "root_device_name": "/dev/xvda",
+              "root_device_type": "ebs",
+              "root_snapshot_id": "snap-0fc7e7a61541563f7",
+              "sriov_net_support": "simple",
+              "state": "available",
+              "state_reason": {
+                "code": "UNSET",
+                "message": "UNSET"
+              },
+              "tags": {},
+              "usage_operation": "RunInstances",
+              "virtualization_type": "hvm"
+            },
+            "sensitive_values": {
+              "block_device_mappings": [
+                {
+                  "ebs": {}
+                }
+              ],
+              "filter": [
+                {
+                  "values": [
+                    false
+                  ]
+                },
+                {
+                  "values": [
+                    false
+                  ]
+                }
+              ],
+              "owners": [
+                false
+              ],
+              "product_codes": [],
+              "state_reason": {},
+              "tags": {}
+            }
+          }
+        ],
+        "child_modules": [
+          {
+            "resources": [
+              {
+                "address": "module.asubmodule.data.aws_ami.amazon_linux",
+                "mode": "data",
+                "type": "aws_ami",
+                "name": "amazon_linux",
+                "provider_name": "registry.terraform.io/hashicorp/aws",
+                "schema_version": 0,
+                "values": {
+                  "architecture": "x86_64",
+                  "arn": "arn:aws:ec2:eu-west-1::image/ami-02b39e8cf8e0bcd8f",
+                  "block_device_mappings": [
+                    {
+                      "device_name": "/dev/xvda",
+                      "ebs": {
+                        "delete_on_termination": "true",
+                        "encrypted": "false",
+                        "iops": "0",
+                        "snapshot_id": "snap-0fc7e7a61541563f7",
+                        "throughput": "0",
+                        "volume_size": "8",
+                        "volume_type": "gp2"
+                      },
+                      "no_device": "",
+                      "virtual_name": ""
+                    }
+                  ],
+                  "boot_mode": "",
+                  "creation_date": "2022-04-19T22:53:43.000Z",
+                  "deprecation_time": "2024-04-19T22:53:43.000Z",
+                  "description": "Amazon Linux AMI 2018.03.0.20220419.0 x86_64 HVM gp2",
+                  "ena_support": true,
+                  "executable_users": null,
+                  "filter": [
+                    {
+                      "name": "name",
+                      "values": [
+                        "amzn-ami-hvm-*-x86_64-gp2"
+                      ]
+                    },
+                    {
+                      "name": "owner-alias",
+                      "values": [
+                        "amazon"
+                      ]
+                    }
+                  ],
+                  "hypervisor": "xen",
+                  "id": "ami-02b39e8cf8e0bcd8f",
+                  "image_id": "ami-02b39e8cf8e0bcd8f",
+                  "image_location": "amazon/amzn-ami-hvm-2018.03.0.20220419.0-x86_64-gp2",
+                  "image_owner_alias": "amazon",
+                  "image_type": "machine",
+                  "kernel_id": "",
+                  "most_recent": true,
+                  "name": "amzn-ami-hvm-2018.03.0.20220419.0-x86_64-gp2",
+                  "name_regex": null,
+                  "owner_id": "137112412989",
+                  "owners": [
+                    "amazon"
+                  ],
+                  "platform": "",
+                  "platform_details": "Linux/UNIX",
+                  "product_codes": [],
+                  "public": true,
+                  "ramdisk_id": "",
+                  "root_device_name": "/dev/xvda",
+                  "root_device_type": "ebs",
+                  "root_snapshot_id": "snap-0fc7e7a61541563f7",
+                  "sriov_net_support": "simple",
+                  "state": "available",
+                  "state_reason": {
+                    "code": "UNSET",
+                    "message": "UNSET"
+                  },
+                  "tags": {},
+                  "usage_operation": "RunInstances",
+                  "virtualization_type": "hvm"
+                },
+                "sensitive_values": {
+                  "block_device_mappings": [
+                    {
+                      "ebs": {}
+                    }
+                  ],
+                  "filter": [
+                    {
+                      "values": [
+                        false
+                      ]
+                    },
+                    {
+                      "values": [
+                        false
+                      ]
+                    }
+                  ],
+                  "owners": [
+                    false
+                  ],
+                  "product_codes": [],
+                  "state_reason": {},
+                  "tags": {}
+                }
+              }
+            ],
+            "address": "module.asubmodule"
+          }
+        ]
+      }
+    }
+  },
+  "configuration": {
+    "provider_config": {
+      "aws": {
+        "name": "aws",
+        "expressions": {
+          "region": {
+            "constant_value": "eu-west-1"
+          }
+        }
+      }
+    },
+    "root_module": {
+      "resources": [
+        {
+          "address": "aws_instance.root-instance",
+          "mode": "managed",
+          "type": "aws_instance",
+          "name": "root-instance",
+          "provider_config_key": "aws",
+          "expressions": {
+            "ami": {
+              "references": [
+                "data.aws_ami.amazon_linux.id",
+                "data.aws_ami.amazon_linux"
+              ]
+            },
+            "instance_type": {
+              "constant_value": "t3.small"
+            }
+          },
+          "schema_version": 1
+        },
+        {
+          "address": "data.aws_ami.amazon_linux",
+          "mode": "data",
+          "type": "aws_ami",
+          "name": "amazon_linux",
+          "provider_config_key": "aws",
+          "expressions": {
+            "filter": [
+              {
+                "name": {
+                  "constant_value": "name"
+                },
+                "values": {
+                  "constant_value": [
+                    "amzn-ami-hvm-*-x86_64-gp2"
+                  ]
+                }
+              },
+              {
+                "name": {
+                  "constant_value": "owner-alias"
+                },
+                "values": {
+                  "constant_value": [
+                    "amazon"
+                  ]
+                }
+              }
+            ],
+            "most_recent": {
+              "constant_value": true
+            },
+            "owners": {
+              "constant_value": [
+                "amazon"
+              ]
+            }
+          },
+          "schema_version": 0
+        }
+      ],
+      "module_calls": {
+        "asubmodule": {
+          "source": "./submodule1",
+          "module": {
+            "resources": [
+              {
+                "address": "aws_ebs_volume.submodule1-ebsvol",
+                "mode": "managed",
+                "type": "aws_ebs_volume",
+                "name": "submodule1-ebsvol",
+                "provider_config_key": "asubmodule:aws",
+                "expressions": {
+                  "availability_zone": {
+                    "constant_value": "eu-west-1a"
+                  },
+                  "size": {
+                    "constant_value": 10
+                  }
+                },
+                "schema_version": 0
+              },
+              {
+                "address": "aws_instance.submodule1-instance",
+                "mode": "managed",
+                "type": "aws_instance",
+                "name": "submodule1-instance",
+                "provider_config_key": "asubmodule:aws",
+                "expressions": {
+                  "ami": {
+                    "references": [
+                      "data.aws_ami.amazon_linux.id",
+                      "data.aws_ami.amazon_linux"
+                    ]
+                  },
+                  "instance_type": {
+                    "constant_value": "t3.small"
+                  }
+                },
+                "schema_version": 1
+              },
+              {
+                "address": "data.aws_ami.amazon_linux",
+                "mode": "data",
+                "type": "aws_ami",
+                "name": "amazon_linux",
+                "provider_config_key": "asubmodule:aws",
+                "expressions": {
+                  "filter": [
+                    {
+                      "name": {
+                        "constant_value": "name"
+                      },
+                      "values": {
+                        "constant_value": [
+                          "amzn-ami-hvm-*-x86_64-gp2"
+                        ]
+                      }
+                    },
+                    {
+                      "name": {
+                        "constant_value": "owner-alias"
+                      },
+                      "values": {
+                        "constant_value": [
+                          "amazon"
+                        ]
+                      }
+                    }
+                  ],
+                  "most_recent": {
+                    "constant_value": true
+                  },
+                  "owners": {
+                    "constant_value": [
+                      "amazon"
+                    ]
+                  }
+                },
+                "schema_version": 0
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}
