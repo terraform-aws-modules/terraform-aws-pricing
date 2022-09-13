@@ -14,7 +14,7 @@ module "pricing" {
     }
     "aws_instance.this2" = {
       instanceType = "t3.large"
-      location     = "ap-southeast-3"
+      location     = "me-central-1"
     }
   }
 }
