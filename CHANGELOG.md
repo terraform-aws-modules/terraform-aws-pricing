@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.4.0](https://github.com/terraform-aws-modules/terraform-aws-pricing/compare/v1.3.1...v1.4.0) (2022-09-13)
+
+
+### Features
+
+* Added support for me-central-1 region ([#11](https://github.com/terraform-aws-modules/terraform-aws-pricing/issues/11)) ([cd4b957](https://github.com/terraform-aws-modules/terraform-aws-pricing/commit/cd4b957f9c8103e8c5f88b21e034ae64f36bee04))
+
 ### [1.3.1](https://github.com/terraform-aws-modules/terraform-aws-pricing/compare/v1.3.0...v1.3.1) (2022-05-05)
 
 
