@@ -164,7 +164,7 @@ When you use this type of backend, there is no way to run `terraform output`.
 
 ## Examples
 
-* [Cost estimation using cost.modules.tf service](https://github.com/terraform-aws-modules/terraform-aws-pricing/tree/master/examples/cost.modules.tf)
+* [Cost estimation using cost.modules.tf service](https://github.com/terraform-aws-modules/terraform-aws-pricing/tree/master/examples/cost-modules-tf)
 * [Terraform state/plan cost estimation using AWS Pricing API](https://github.com/terraform-aws-modules/terraform-aws-pricing/tree/master/examples/pricing-terraform-state-and-plan)
 * [Complete example using AWS Pricing API](https://github.com/terraform-aws-modules/terraform-aws-pricing/tree/master/examples/complete) - Get cost estimation for multiple sources combined.
 * [Specified resources using AWS Pricing API](https://github.com/terraform-aws-modules/terraform-aws-pricing/tree/master/examples/pricing-resources) - Get cost estimation for specified resources.
