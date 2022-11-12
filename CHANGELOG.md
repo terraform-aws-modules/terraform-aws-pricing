@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file.
 
+## [2.0.0](https://github.com/terraform-aws-modules/terraform-aws-pricing/compare/v1.4.0...v2.0.0) (2022-11-12)
+
+
+### ⚠ BREAKING CHANGES
+
+* Update supported Terraform min version to v1.0+ and AWS provider to v4.0+ (#13)
+
+### Features
+
+* Update supported Terraform min version to v1.0+ and AWS provider to v4.0+ ([#13](https://github.com/terraform-aws-modules/terraform-aws-pricing/issues/13)) ([904bebd](https://github.com/terraform-aws-modules/terraform-aws-pricing/commit/904bebd8c6483f5ebe46c5e1c085ca2952186223))
+
+
+### Bug Fixes
+
+* README example link ([#12](https://github.com/terraform-aws-modules/terraform-aws-pricing/issues/12)) ([39b47bf](https://github.com/terraform-aws-modules/terraform-aws-pricing/commit/39b47bf61973f6dd5dddc06e629e1d1c8d22dd39))
+
 ## [1.4.0](https://github.com/terraform-aws-modules/terraform-aws-pricing/compare/v1.3.1...v1.4.0) (2022-09-13)
 
 
