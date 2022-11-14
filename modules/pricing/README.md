@@ -67,6 +67,7 @@ No modules.
 | <a name="input_debug_output"></a> [debug\_output](#input\_debug\_output) | Whether to populate more output (useful for debug, but increase verbosity and size of tfstate) | `bool` | `false` | no |
 | <a name="input_hourly_price_precision"></a> [hourly\_price\_precision](#input\_hourly\_price\_precision) | Number of digits after comma in hourly price | `number` | `10` | no |
 | <a name="input_monthly_price_precision"></a> [monthly\_price\_precision](#input\_monthly\_price\_precision) | Number of digits after comma in monthly price | `number` | `2` | no |
+| <a name="input_query_all_regions"></a> [query\_all\_regions](#input\_query\_all\_regions) | If true the source will query all regions regardless of availability | `bool` | `true` | no |
 | <a name="input_resources"></a> [resources](#input\_resources) | Map of all resources to calculate price for | `any` | `{}` | no |
 
 ## Outputs
