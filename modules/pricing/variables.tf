@@ -45,6 +45,12 @@ variable "monthly_price_precision" {
   default     = 2
 }
 
+variable "query_all_regions" {
+  description = "If true the source will query all regions regardless of availability"
+  type        = bool
+  default     = true
+}
+
 # Defaults
 variable "aws_default_region" {
   description = "Default AWS region to use for resources (if not set) when asking AWS Pricing API"

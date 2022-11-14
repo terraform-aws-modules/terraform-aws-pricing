@@ -1,5 +1,5 @@
 data "aws_regions" "all" {
-  all_regions = true
+  all_regions = var.query_all_regions
 }
 
 data "aws_region" "one" {
