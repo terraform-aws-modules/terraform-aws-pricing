@@ -5,7 +5,8 @@ provider "aws" {
 module "pricing" {
   source = "../../modules/pricing"
 
-  debug_output = true
+  debug_output      = true
+  query_all_regions = false
 
   resources = {
     "aws_instance.this#3" = { # 3 instances
