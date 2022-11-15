@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+### [2.0.1](https://github.com/terraform-aws-modules/terraform-aws-pricing/compare/v2.0.0...v2.0.1) (2022-11-15)
+
+
+### Bug Fixes
+
+* Support for new AWS region ([#15](https://github.com/terraform-aws-modules/terraform-aws-pricing/issues/15)) ([b1d5988](https://github.com/terraform-aws-modules/terraform-aws-pricing/commit/b1d598882f64efb1aa1e4c43899a58e8bfc4adda))
+
 ## [2.0.0](https://github.com/terraform-aws-modules/terraform-aws-pricing/compare/v1.4.0...v2.0.0) (2022-11-12)
 
 
