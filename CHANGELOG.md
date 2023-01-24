@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+### [2.0.2](https://github.com/terraform-aws-modules/terraform-aws-pricing/compare/v2.0.1...v2.0.2) (2023-01-24)
+
+
+### Bug Fixes
+
+* Updated GH Action version of terraform-composite-actions/directories ([#16](https://github.com/terraform-aws-modules/terraform-aws-pricing/issues/16)) ([61212bc](https://github.com/terraform-aws-modules/terraform-aws-pricing/commit/61212bcbf005119c7d189b6e47e32470a1985c21))
+
 ### [2.0.1](https://github.com/terraform-aws-modules/terraform-aws-pricing/compare/v2.0.0...v2.0.1) (2022-11-15)
 
 
