@@ -54,7 +54,7 @@ provider "aws" {
 
 module "pricing" {
   source = "terraform-aws-modules/pricing/aws//modules/pricing"
-  
+
   # content can be Terraform state or plan as JSON fetched from any source (see examples)
   content = jsondecode("{\"version\": 4, \"terraform_version\": \"0.14.4\", ...")
 }
@@ -73,7 +73,7 @@ data "local_file" "local_plan" {
 
 module "pricing" {
   source = "terraform-aws-modules/pricing/aws//modules/pricing"
-  
+
   content = jsondecode(data.local_file.local_plan.content)
 }
 ```
@@ -87,7 +87,7 @@ provider "aws" {
 
 module "pricing" {
   source = "terraform-aws-modules/pricing/aws//modules/pricing"
-  
+
   resources = {
     "aws_instance.this#5" = { # Note: This means 5 instances (`count = 5`)
       instanceType = "c5.xlarge"
@@ -126,7 +126,7 @@ end
 
 Set AWS provider's region to `us-east-1` or `sa-east-1` when using [modules/pricing](https://github.com/terraform-aws-modules/terraform-aws-pricing/tree/master/modules/pricing) because AWS Pricing service is only available in these regions.
 
-You can also pass provider explicitly as described in the [official documentation](https://www.terraform.io/docs/modules/providers.html#passing-providers-explicitly). 
+You can also pass provider explicitly as described in the [official documentation](https://www.terraform.io/docs/modules/providers.html#passing-providers-explicitly).
 
 
 #### Debug & development tips
