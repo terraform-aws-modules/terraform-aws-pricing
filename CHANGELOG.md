@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [2.0.3](https://github.com/terraform-aws-modules/terraform-aws-pricing/compare/v2.0.2...v2.0.3) (2024-03-07)
+
+
+### Bug Fixes
+
+* Update CI workflow versions to remove deprecated runtime warnings ([#23](https://github.com/terraform-aws-modules/terraform-aws-pricing/issues/23)) ([179eccb](https://github.com/terraform-aws-modules/terraform-aws-pricing/commit/179eccb65e4fabf3106465035faabf4feb1feb3b))
+
 ### [2.0.2](https://github.com/terraform-aws-modules/terraform-aws-pricing/compare/v2.0.1...v2.0.2) (2023-01-24)
 
 
