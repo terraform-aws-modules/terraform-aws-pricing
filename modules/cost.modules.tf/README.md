@@ -4,7 +4,7 @@ This module gets cost estimation from `cost.modules.tf` service based on the pro
 
 `cost.modules.tf` is entirely free cost estimation service, which is part of [modules.tf](https://modules.tf) that is currently in active development.
 
-See [repository terraform-cost-estimation](https://github.com/antonbabenko/terraform-cost-estimation) and [terraform-cost-estimation.com](https://www.terraform-cost-estimation.com/) for more information. 
+See [repository terraform-cost-estimation](https://github.com/antonbabenko/terraform-cost-estimation) and [terraform-cost-estimation.com](https://www.terraform-cost-estimation.com/) for more information.
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
@@ -12,7 +12,6 @@ See [repository terraform-cost-estimation](https://github.com/antonbabenko/terra
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.0 |
-| <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 4.0 |
 | <a name="requirement_local"></a> [local](#requirement\_local) | >= 1.0 |
 | <a name="requirement_null"></a> [null](#requirement\_null) | >= 2.0 |
 

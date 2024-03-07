@@ -5,12 +5,16 @@ provider "aws" {
 ##################################################################
 # Data sources to get VPC, subnet, security group and AMI details
 ##################################################################
+
 data "aws_vpc" "default" {
   default = true
 }
 
-data "aws_subnet_ids" "all" {
-  vpc_id = data.aws_vpc.default.id
+data "aws_subnets" "all" {
+  filter {
+    name   = "vpc-id"
+    values = [data.aws_vpc.default.id]
+  }
 }
 
 data "aws_ami" "amazon_linux" {
@@ -35,7 +39,7 @@ module "instance_count_2" {
   name          = "instance_count_"
   ami           = data.aws_ami.amazon_linux.id
   instance_type = "t2.micro"
-  subnet_id     = element(data.aws_subnet_ids.all.ids, 0)
+  subnet_id     = element(data.aws_subnets.all.ids, 0)
 
   root_block_device = [
     {
@@ -52,7 +56,7 @@ module "module_count_2" {
   name          = "module_count_"
   ami           = data.aws_ami.amazon_linux.id
   instance_type = "t2.nano"
-  subnet_id     = element(data.aws_subnet_ids.all.ids, 0)
+  subnet_id     = element(data.aws_subnets.all.ids, 0)
 
 }
 
@@ -68,7 +72,7 @@ resource "aws_instance" "nano_count_2" {
 
   ami           = data.aws_ami.amazon_linux.id
   instance_type = "t3.nano"
-  subnet_id     = element(data.aws_subnet_ids.all.ids, 0)
+  subnet_id     = element(data.aws_subnets.all.ids, 0)
 }
 
 ##########
@@ -78,7 +82,7 @@ resource "aws_instance" "small_for_each_fixed" {
 
   ami           = data.aws_ami.amazon_linux.id
   instance_type = "t3.small"
-  subnet_id     = element(data.aws_subnet_ids.all.ids, 0)
+  subnet_id     = element(data.aws_subnets.all.ids, 0)
 
   tags = { Name : each.value }
 }

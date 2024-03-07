@@ -144,35 +144,35 @@ resource "aws_elb" "elb" {
     lb_protocol       = "HTTP"
   }
 
-  subnets = data.aws_subnet_ids.all.ids
+  subnets = data.aws_subnets.all.ids
 }
 
 resource "aws_lb" "alb1" {
   load_balancer_type = "application"
-  subnets            = data.aws_subnet_ids.all.ids
+  subnets            = data.aws_subnets.all.ids
 }
 
 resource "aws_alb" "alb2" {
   load_balancer_type = "application"
-  subnets            = data.aws_subnet_ids.all.ids
+  subnets            = data.aws_subnets.all.ids
 }
 
 resource "aws_lb" "nlb" {
   load_balancer_type = "network"
-  subnets            = data.aws_subnet_ids.all.ids
+  subnets            = data.aws_subnets.all.ids
 }
 
 resource "aws_lb" "undefined_type" {
-  subnets = data.aws_subnet_ids.all.ids
+  subnets = data.aws_subnets.all.ids
 }
 
 resource "aws_eip" "nat" {
-  vpc = true
+  domain = "vpc"
 }
 
 resource "aws_nat_gateway" "nat" {
   allocation_id = aws_eip.nat.id
-  subnet_id     = tolist(data.aws_subnet_ids.all.ids)[0]
+  subnet_id     = tolist(data.aws_subnets.all.ids)[0]
 }
 
 #######################################################

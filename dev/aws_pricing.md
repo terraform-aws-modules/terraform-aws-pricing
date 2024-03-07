@@ -229,7 +229,7 @@ aws pricing get-attribute-values --region us-east-1 --service-code AmazonRDS --a
 ```
 
 
-aws pricing get-attribute-values --region us-east-1 --service-code AmazonRDS --attribute-name volumeType  
+aws pricing get-attribute-values --region us-east-1 --service-code AmazonRDS --attribute-name volumeType
 ```
 {
     "AttributeValues": [
