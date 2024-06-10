@@ -124,7 +124,7 @@ end
 
 #### AWS provider
 
-Set AWS provider's region to `us-east-1` or `sa-east-1` when using [modules/pricing](https://github.com/terraform-aws-modules/terraform-aws-pricing/tree/master/modules/pricing) because AWS Pricing service is only available in these regions.
+Set AWS provider's region to `us-east-1`, `ap-south-1` or `eu-central-1` when using [modules/pricing](https://github.com/terraform-aws-modules/terraform-aws-pricing/tree/master/modules/pricing) because AWS Pricing service is only available in these regions.
 
 You can also pass provider explicitly as described in the [official documentation](https://www.terraform.io/docs/modules/providers.html#passing-providers-explicitly).
 
