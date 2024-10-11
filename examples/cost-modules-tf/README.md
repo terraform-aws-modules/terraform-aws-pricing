@@ -14,7 +14,7 @@ $ terraform apply
 
 Run `terraform destroy` when you don't need these resources.
 
-<!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+<!-- BEGIN_TF_DOCS -->
 ## Requirements
 
 | Name | Version |
@@ -57,4 +57,4 @@ No inputs.
 | <a name="output_price_plan"></a> [price\_plan](#output\_price\_plan) | Costs for local file - plan |
 | <a name="output_price_tfstate"></a> [price\_tfstate](#output\_price\_tfstate) | Costs for local file - state |
 | <a name="output_price_tfstate_with_terraform_remote_state"></a> [price\_tfstate\_with\_terraform\_remote\_state](#output\_price\_tfstate\_with\_terraform\_remote\_state) | Costs for remote state |
-<!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+<!-- END_TF_DOCS -->

@@ -29,7 +29,7 @@ add support for new types of resources.
 
 `regions.tf` contains logic for expanding AWS regions map which is expected by Pricing API.
 
-<!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+<!-- BEGIN_TF_DOCS -->
 ## Requirements
 
 | Name | Version |
@@ -82,4 +82,4 @@ No modules.
 | <a name="output_resources"></a> [resources](#output\_resources) | Map of provided resources with filters |
 | <a name="output_total_price_per_hour"></a> [total\_price\_per\_hour](#output\_total\_price\_per\_hour) | Total price for all resources per hour |
 | <a name="output_total_price_per_month"></a> [total\_price\_per\_month](#output\_total\_price\_per\_month) | Total price for all resources per month (730 hours) |
-<!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+<!-- END_TF_DOCS -->

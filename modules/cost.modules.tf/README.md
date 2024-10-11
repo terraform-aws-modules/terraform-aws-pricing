@@ -6,7 +6,7 @@ This module gets cost estimation from `cost.modules.tf` service based on the pro
 
 See [repository terraform-cost-estimation](https://github.com/antonbabenko/terraform-cost-estimation) and [terraform-cost-estimation.com](https://www.terraform-cost-estimation.com/) for more information.
 
-<!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+<!-- BEGIN_TF_DOCS -->
 ## Requirements
 
 | Name | Version |
@@ -50,4 +50,4 @@ No modules.
 | <a name="output_costs"></a> [costs](#output\_costs) | Total costs |
 | <a name="output_hourly"></a> [hourly](#output\_hourly) | Hourly costs |
 | <a name="output_monthly"></a> [monthly](#output\_monthly) | Monthly costs |
-<!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+<!-- END_TF_DOCS -->

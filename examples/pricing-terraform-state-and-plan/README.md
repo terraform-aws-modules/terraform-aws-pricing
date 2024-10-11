@@ -16,7 +16,7 @@ $ terraform apply
 
 Run `terraform destroy` when you don't need these resources.
 
-<!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+<!-- BEGIN_TF_DOCS -->
 ## Requirements
 
 | Name | Version |
@@ -68,4 +68,4 @@ No inputs.
 | <a name="output_pricing_state_resources"></a> [pricing\_state\_resources](#output\_pricing\_state\_resources) | Map of provided resources with filters |
 | <a name="output_pricing_state_total_price_per_hour"></a> [pricing\_state\_total\_price\_per\_hour](#output\_pricing\_state\_total\_price\_per\_hour) | Total price for all resources |
 | <a name="output_pricing_state_total_price_per_month"></a> [pricing\_state\_total\_price\_per\_month](#output\_pricing\_state\_total\_price\_per\_month) | Total price for all resources per month (730 hours) |
-<!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+<!-- END_TF_DOCS -->
