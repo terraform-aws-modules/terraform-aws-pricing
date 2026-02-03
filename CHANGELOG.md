@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file.
 
+## [3.0.0](https://github.com/terraform-aws-modules/terraform-aws-pricing/compare/v2.0.3...v3.0.0) (2026-02-03)
+
+
+### ⚠ BREAKING CHANGES
+
+* Minimum AWS provider version bumped from v4.0 to v6.0
+
+### Bug Fixes
+
+* Replace deprecated `name` argument with `region` in `aws_region` data source ([#24](https://github.com/terraform-aws-modules/terraform-aws-pricing/issues/24))
+
 ## [2.0.3](https://github.com/terraform-aws-modules/terraform-aws-pricing/compare/v2.0.2...v2.0.3) (2024-03-07)
 
 
