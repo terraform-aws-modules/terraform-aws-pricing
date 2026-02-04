@@ -8,6 +8,7 @@ All notable changes to this project will be documented in this file.
 ### ⚠ BREAKING CHANGES
 
 * Minimum AWS provider version bumped from v4.0 to v6.0
+* Updated `terraform-aws-modules/ec2-instance/aws` module in fixtures from v3.0 to v6.0
 
 ### Bug Fixes
 
