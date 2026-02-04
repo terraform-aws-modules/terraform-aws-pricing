@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file.
 
+## [3.0.0](https://github.com/terraform-aws-modules/terraform-aws-pricing/compare/v2.0.3...v3.0.0) (2026-02-04)
+
+
+### ⚠ BREAKING CHANGES
+
+* Bump minimum AWS provider version to 6.0 (#27)
+
+### Features
+
+* Bump minimum AWS provider version to 6.0 ([#27](https://github.com/terraform-aws-modules/terraform-aws-pricing/issues/27)) ([c1ace99](https://github.com/terraform-aws-modules/terraform-aws-pricing/commit/c1ace990a74e23535e14ba07700bf04e9574bbb3))
+
+
+### Bug Fixes
+
+* Update AWS Pricing regions in readme ([#25](https://github.com/terraform-aws-modules/terraform-aws-pricing/issues/25)) ([719da5e](https://github.com/terraform-aws-modules/terraform-aws-pricing/commit/719da5e2557867c2eef31ce6fbe724348abc9ea0))
+* Update CI workflow versions to latest ([#26](https://github.com/terraform-aws-modules/terraform-aws-pricing/issues/26)) ([5dccb3c](https://github.com/terraform-aws-modules/terraform-aws-pricing/commit/5dccb3c6c2c8117f44145a9289b50319210dd7ea))
+
 ## [3.0.0](https://github.com/terraform-aws-modules/terraform-aws-pricing/compare/v2.0.3...v3.0.0) (2026-02-03)
 
 
