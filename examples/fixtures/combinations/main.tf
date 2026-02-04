@@ -34,24 +34,22 @@ data "aws_ami" "amazon_linux" {
 
 module "instance_count_2" {
   source  = "terraform-aws-modules/ec2-instance/aws"
-  version = "~> 3.0"
+  version = "~> 6.0"
 
   name          = "instance_count_"
   ami           = data.aws_ami.amazon_linux.id
   instance_type = "t2.micro"
   subnet_id     = element(data.aws_subnets.all.ids, 0)
 
-  root_block_device = [
-    {
-      volume_type = "gp2"
-      volume_size = 10
-    },
-  ]
+  root_block_device = {
+    volume_type = "gp2"
+    volume_size = 10
+  }
 }
 
 module "module_count_2" {
   source  = "terraform-aws-modules/ec2-instance/aws"
-  version = "~> 3.0"
+  version = "~> 6.0"
 
   name          = "module_count_"
   ami           = data.aws_ami.amazon_linux.id
